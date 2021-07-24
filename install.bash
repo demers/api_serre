@@ -8,3 +8,4 @@ sudo mysql
 # CREATE USER 'serre'@'localhost' IDENTIFIED BY 'password';
 # Changer "password" par le bon mot de passe.
 # GRANT ALL PRIVILEGES ON *.* TO 'serre'@'localhost' WITH GRANT OPTION;
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
