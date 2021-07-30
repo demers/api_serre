@@ -26,7 +26,7 @@ class MYSQLDB():
 
     def __init__(self):
         if MYSQLDB.__instance != None:
-            raise Exception("There should only be one instance of SQLiteDB")
+            raise Exception("There should only be one instance of Mysql")
         else:
             MYSQLDB.__instance = self
             #self.db = mysql.connector.connect(**getConfig())
