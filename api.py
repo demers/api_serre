@@ -36,6 +36,14 @@ def route_initialize():
     reponse = dbInitialize()
     return jsonify({'Réinitialisation.  Tables recréées ': reponse})
 
+@app.route('/temperatures', methods=['POST'])
+def route_temperatures_post():
+	return 'post'
+
+@app.route('/temperatures', methods=['GET'])
+def route_temperatures_get():
+	return 'get'
+
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
 
