@@ -25,6 +25,19 @@ def putTemperatureToDB(senseur, temperature):
     query = "INSERT INTO Temperature (Senseur, Temp, Date_temp) VALUES (" + senseur + ", " + temperature + ", NOW());"
     getDB().runUpdateQuery(query)
 
+def representsInt(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+def representsFloat(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 app = Flask('API pour la serre')
 
@@ -42,9 +55,9 @@ def route_initialize():
 
 @app.route('/temperatures', methods=['POST'])
 def route_temperatures_post():
-    senseur_id = request.form['senseur_id']
-    temperature = request.form['temp']
-    if (not isinstance(senseur_id, int)) or (not isinstance(temperature, int)):
+    senseur_id = request.form.get('senseur_id')
+    temperature = request.form.get('temp')
+    if (not representsInt(senseur_id)) or (not representsFloat(temperature)):
         reponse = jsonify({'Erreur': 'senseur_id ou temp ne sont pas des entiers.'})
     else:
         putTemperatureToDB(senseur_id, temperature)
