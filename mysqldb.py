@@ -15,10 +15,10 @@ class MYSQLDB():
             MYSQLDB()
         return MYSQLDB.__instance
 
-    def getConfig():
+    def getConfig(self):
         config = {
             'user': 'serre',
-            'password': base64.b64decode(ACCESS).decode('UTF-8')[:-1],
+            'password': base64.b64decode(self.ACCESS).decode('UTF-8')[:-1],
             'host': 'localhost',
             'port': '3306',
             'database':'serre'}
@@ -33,7 +33,7 @@ class MYSQLDB():
 
     def runUpdateQuery(self, query):
         try:
-            conn = mysql.connector.connect(**getConfig())
+            conn = mysql.connector.connect(**self.getConfig())
             cursor = conn.cursor()
             print(query, flush=True)
             cursor.execute(query)
