@@ -34,7 +34,7 @@ def welcome():
 @app.route('/initialize')
 def route_initialize():
     reponse = dbInitialize()
-    return jsonify({'Tables recréées ': reponse})
+    return jsonify({'Réinitialisation.  Tables recréées ': reponse})
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
