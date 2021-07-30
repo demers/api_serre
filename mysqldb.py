@@ -18,7 +18,6 @@ class MYSQLDB():
     def getConfig():
         config = {
             'user': 'serre',
-            # 'password': 'jcdi3726'
             'password': base64.b64decode(ACCESS).decode('UTF-8')[:-1]
             'host': 'localhost'
             'port': '3306'

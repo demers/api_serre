@@ -10,5 +10,6 @@ sudo mysql
 # GRANT ALL PRIVILEGES ON *.* TO 'serre'@'localhost' WITH GRANT OPTION;
 sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 sudo apt-get -y install python3-pip
+
 pip install mysql-connector-python
 pip install flask
