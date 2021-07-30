@@ -9,7 +9,7 @@ def getDB():
 def dbInitialize():
     query = "DROP TABLE IF EXISTS Temperature;"
     getDB().runUpdateQuery(query)
-    query = "CREATE TABLE Temperature (TemperatureID INT AUTO_INCREMENT, Senseur INT, Temp DECIMAL(2, 2), Date_temp DATETIME);"
+    query = "CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Senseur INT, Temp DECIMAL(2, 2), Date_temp DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));"
     getDB().runUpdateQuery(query)
     return 'Temperature'
 

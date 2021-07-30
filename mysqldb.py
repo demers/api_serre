@@ -41,6 +41,7 @@ class MYSQLDB():
         except Exception as e:
             print("some exception occurred: " + str(e), flush=True)
         finally:
-            cursor.close()
-            conn.close()
+            pass
+            # cursor.close()
+            # conn.close()
 
