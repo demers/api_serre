@@ -22,7 +22,7 @@ def getTemperatureSenseurFromDB(senseur_id):
     return getDB().runSelectQuery(query)
 
 def putTemperatureToDB(senseur, temperature):
-    query = "INSERT INTO Temperature (Senseur, Temp, Date_temp) VALUES (" + str(senseur) + ", " + str(temperature) + ", NOW());"
+    query = "INSERT INTO Temperature (Senseur, Temp, Date_temp) VALUES (" + senseur + ", " + temperature + ", NOW());"
     getDB().runUpdateQuery(query)
 
 
@@ -42,12 +42,28 @@ def route_initialize():
 
 @app.route('/temperatures', methods=['POST'])
 def route_temperatures_post():
-	return 'post'
+    senseur_id = request.form['senseur_id']
+    temperature = request.form['temp']
+    if (not isinstance(senseur_id, int)) or (not isinstance(temperature, int)):
+        reponse = jsonify({'Erreur': 'senseur_id ou temp ne sont pas des entiers.'})
+    else:
+        putTemperatureToDB(senseur_id, temperature)
+        valeurs_enr = dict()
+        valeurs_enr['senseur_id'] = senseur_id
+        valeurs_enr['temp'] = temperature
+        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+    return reponse
+
 
 @app.route('/temperatures', methods=['GET'])
 def route_temperatures_get():
-    reponse_sql = getTemperatureFromDB()
-    return jsonify({'Requête': str(reponse_sql)})
+    reponse_records = getTemperatureFromDB()
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Senseur ID': row[1],
+                               'Température': row[2],
+                               'Date': row[3] }
+    return jsonify({'Liste des températures': json_return})
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
