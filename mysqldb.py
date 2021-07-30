@@ -41,7 +41,23 @@ class MYSQLDB():
         except Exception as e:
             print("some exception occurred: " + str(e), flush=True)
         finally:
-            pass
-            # cursor.close()
-            # conn.close()
+            if conn.is_connected():
+                conn.close()
+                cursor.close()
 
+    def runSelectQuery(self, query):
+        records = []
+        try:
+            conn = mysql.connector.connect(**self.getConfig())
+            cursor = conn.cursor()
+            print(query, flush=True)
+            cursor.execute(query)
+            records = cursor.fetchall()
+            conn.commit()
+        except Exception as e:
+            print("some exception occurred: " + str(e), flush=True)
+        finally:
+            if conn.is_connected():
+                conn.close()
+                cursor.close()
+        return records

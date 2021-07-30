@@ -13,9 +13,13 @@ def dbInitialize():
     getDB().runUpdateQuery(query)
     return 'Temperature'
 
-def getTemperatureFromDB(senseur):
-    query = "..."
-    getDB().runUpdateQuery(query)
+def getTemperatureFromDB():
+    query = "SELECT * FROM Temperature;"
+    return getDB().runSelectQuery(query)
+
+def getTemperatureSenseurFromDB(senseur_id):
+    query = "SELECT * FROM Temperature WHERE Senseur = " + senseur_id + ";"
+    return getDB().runSelectQuery(query)
 
 def putTemperatureToDB(senseur, temperature):
     query = "INSERT INTO Temperature (Senseur, Temp, Date_temp) VALUES (" + str(senseur) + ", " + str(temperature) + ", NOW());"
@@ -42,7 +46,8 @@ def route_temperatures_post():
 
 @app.route('/temperatures', methods=['GET'])
 def route_temperatures_get():
-	return 'get'
+    reponse_sql = getTemperatureFromDB()
+    return jsonify({'Requête': str(reponse_sql)})
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
