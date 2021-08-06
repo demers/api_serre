@@ -67,10 +67,12 @@ def hello():
 def welcome():
 	return hello()
 
+
 @app.route('/initialize')
 def route_initialize():
     reponse = dbInitialize()
     return jsonify({'Réinitialisation.  Tables recréées ': reponse})
+
 
 @app.route('/temperatures', methods=['POST'])
 def route_temperatures_post():
@@ -98,6 +100,7 @@ def route_temperatures_get():
                                'Date': row[3] }
     return jsonify({'Liste des températures': json_return})
 
+
 @app.route('/humidites', methods=['POST'])
 def route_humidites_post():
     capteur_id = request.form.get('capteur_id')
@@ -124,6 +127,7 @@ def route_humidites_get():
                                'Date': row[3] }
     return jsonify({'Liste des humidités': json_return})
 
+
 @app.route('/capteur1', methods=['POST'])
 def route_temperatures_post():
     temperature = request.form.get('temp')
@@ -141,6 +145,26 @@ def route_temperatures_post():
         valeurs_enr['hum'] = humidite
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
+
+
+@app.route('/capteur2', methods=['POST'])
+def route_temperatures_post():
+    temperature = request.form.get('temp')
+    humidite = request.form.get('hum')
+    capteur_id = '2'
+    if (not representsFloat(temperature)) or (not representsFloat(humidite)):
+        reponse = jsonify({'Erreur': 'capteur_id ou temp ne sont pas des entiers.'})
+    else:
+        now = datetime.datetime.now()
+        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
+        valeurs_enr = dict()
+        valeurs_enr['capteur_id'] = capteur_id
+        valeurs_enr['temp'] = temperature
+        valeurs_enr['hum'] = humidite
+        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+    return reponse
+
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
