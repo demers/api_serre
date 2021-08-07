@@ -27,7 +27,7 @@ def getHumiditeFromDB():
     return getDB().runSelectQuery(query)
 
 def getTemperatureHumiditeFromDB(capteur):
-    query = "SELECT Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Capteur = Humidite.Capteur and Temperature.Capteur = " + str(capteur) + ";"
+    query = "SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Temperature_id = Humidite.Humidite_id and Temperature.Capteur = " + str(capteur) + ";"
     return getDB().runSelectQuery(query)
 
 def getTemperatureSenseurFromDB(capteur_id):
