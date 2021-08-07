@@ -112,7 +112,7 @@ def route_humidites_post():
         putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
-        valeurs_enr['hum'] = temperature
+        valeurs_enr['hum'] = humidite
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
 
