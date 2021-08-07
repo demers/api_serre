@@ -26,6 +26,10 @@ def getHumiditeFromDB():
     query = "SELECT * FROM Humidite;"
     return getDB().runSelectQuery(query)
 
+def getTemperatureHumiditeFromDB(capteur):
+    query = "SELECT Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Capteur = Humidite.Capteur and Temperature.Capteur = " + str(capteur) + ";"
+    return getDB().runSelectQuery(query)
+
 def getTemperatureSenseurFromDB(capteur_id):
     query = "SELECT * FROM Temperature WHERE Capteur = " + capteur_id + ";"
     return getDB().runSelectQuery(query)
@@ -147,6 +151,18 @@ def route_capteur1_post():
     return reponse
 
 
+@app.route('/capteur1', methods=['GET'])
+def route_capteur1_get():
+    reponse_records = getTemperatureHumiditeFromDB(1)
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Capteur ID': row[1],
+                               'Température': row[2],
+                               'Humidité': row[3],
+                               'Date': row[4] }
+    return jsonify({'Liste des températures et humidités': json_return})
+
+
 @app.route('/capteur2', methods=['POST'])
 def route_capteur2_post():
     temperature = request.form.get('temp')
@@ -164,6 +180,18 @@ def route_capteur2_post():
         valeurs_enr['hum'] = humidite
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
+
+
+@app.route('/capteur2', methods=['GET'])
+def route_capteur2_get():
+    reponse_records = getTemperatureHumiditeFromDB(2)
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Capteur ID': row[1],
+                               'Température': row[2],
+                               'Humidité': row[3],
+                               'Date': row[4] }
+    return jsonify({'Liste des températures et humidités': json_return})
 
 
 if __name__ == '__main__':
