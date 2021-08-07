@@ -32,7 +32,7 @@ def getTemperatureSenseurFromDB(capteur_id):
 
 def putTemperatureToDB(capteur, temperature, date):
     # query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", NOW());"
-    query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", " +  date + ");"
+    query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", '" +  date + "');"
     getDB().runUpdateQuery(query)
 
 def getHumiditeSenseurFromDB(capteur_id):
@@ -41,7 +41,7 @@ def getHumiditeSenseurFromDB(capteur_id):
 
 def putHumiditeToDB(capteur, humidite, date):
     # query = "INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (" + capteur + ", " + humidite + ", NOW());"
-    query = "INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (" + capteur + ", " + humidite + ", " + date + ");"
+    query = "INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (" + capteur + ", " + humidite + ", '" + date + "');"
     getDB().runUpdateQuery(query)
 
 def representsInt(s):
