@@ -129,7 +129,7 @@ def route_humidites_get():
 
 
 @app.route('/capteur1', methods=['POST'])
-def route_temperatures_post():
+def route_capteur1_post():
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     capteur_id = '1'
@@ -148,7 +148,7 @@ def route_temperatures_post():
 
 
 @app.route('/capteur2', methods=['POST'])
-def route_temperatures_post():
+def route_capteur2_post():
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     capteur_id = '2'
