@@ -78,11 +78,11 @@ def route_initialize():
 def route_temperatures_post():
     capteur_id = request.form.get('capteur_id')
     temperature = request.form.get('temp')
-    if (not representsInt(senseur_id)) or (not representsFloat(temperature)):
+    if (not representsInt(capteur_id)) or (not representsFloat(temperature)):
         reponse = jsonify({'Erreur': 'capteur_id ou temp ne sont pas des entiers.'})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(senseur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
