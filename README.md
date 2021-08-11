@@ -9,3 +9,7 @@ Installation Ubuntu API Mysql et Flask (Python)
 * https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
 * https://github.com/miguelgrinberg/REST-tutorial
 
+# Pour l'analyse des données
+
+* https://opensearch.org/
+* https://github.com/cube-js/cube.js
