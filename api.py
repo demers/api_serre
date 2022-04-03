@@ -160,67 +160,67 @@ def route_capteur_generic_get(capteur_id):
 
 @app.route('/capteur1', methods=['POST'])
 def route_capteur1_post():
-    route_capteur_generic_post(1)
+    return route_capteur_generic_post(1)
 
 @app.route('/capteur1', methods=['GET'])
 def route_capteur1_get():
-    route_capteur_generic_get(1)
+    return route_capteur_generic_get(1)
 
 @app.route('/capteur2', methods=['POST'])
 def route_capteur2_post():
-    route_capteur_generic_post(2)
+    return route_capteur_generic_post(2)
 
 @app.route('/capteur2', methods=['GET'])
 def route_capteur2_get():
-    route_capteur_generic_get(2)
+    return route_capteur_generic_get(2)
 
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
-    route_capteur_generic_post(3)
+    return route_capteur_generic_post(3)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
-    route_capteur_generic_get(3)
+    return route_capteur_generic_get(3)
 
 @app.route('/capteur4', methods=['POST'])
 def route_capteur4_post():
-    route_capteur_generic_post(4)
+    return route_capteur_generic_post(4)
 
 @app.route('/capteur4', methods=['GET'])
 def route_capteur4_get():
-    route_capteur_generic_get(4)
+    return route_capteur_generic_get(4)
 
 @app.route('/capteur5', methods=['POST'])
 def route_capteur5_post():
-    route_capteur_generic_post(5)
+    return route_capteur_generic_post(5)
 
 @app.route('/capteur5', methods=['GET'])
 def route_capteur5_get():
-    route_capteur_generic_get(5)
+    return route_capteur_generic_get(5)
 
 @app.route('/capteur6', methods=['POST'])
 def route_capteur6_post():
-    route_capteur_generic_post(6)
+    return route_capteur_generic_post(6)
 
 @app.route('/capteur6', methods=['GET'])
 def route_capteur6_get():
-    route_capteur_generic_get(6)
+    return route_capteur_generic_get(6)
 
 @app.route('/capteur7', methods=['POST'])
 def route_capteur7_post():
-    route_capteur_generic_post(7)
+    return route_capteur_generic_post(7)
 
 @app.route('/capteur7', methods=['GET'])
 def route_capteur7_get():
-    route_capteur_generic_get(7)
+    return route_capteur_generic_get(7)
 
 @app.route('/capteur8', methods=['POST'])
 def route_capteur8_post():
-    route_capteur_generic_post(8)
+    return route_capteur_generic_post(8)
 
 @app.route('/capteur8', methods=['GET'])
 def route_capteur8_get():
-    route_capteur_generic_get(8)
+    return route_capteur_generic_get(8)
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
