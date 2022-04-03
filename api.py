@@ -139,10 +139,10 @@ def route_capteur_generic_post(capteur_id):
         reponse = jsonify({'Erreur': 'capteur_id ou temp ne sont pas des entiers.'})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
-        putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putHumiditeToDB(str(capteur_id), humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
         valeurs_enr = dict()
-        valeurs_enr['capteur_id'] = capteur_id
+        valeurs_enr['capteur_id'] = str(capteur_id)
         valeurs_enr['temp'] = temperature
         valeurs_enr['hum'] = humidite
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
