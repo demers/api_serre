@@ -39,14 +39,14 @@ http -f localhost:8080/capteur2
 
 sleep 1
 echo "La température et l'humidité du capteur 3 est à 50.2 et 80.0..."
-http -f localhost:8080/saturations capteur=3 sat=50.2
+http -f localhost:8080/saturations capteur_id=3 sat=50.2
 sleep 1
 echo "Les valeurs sont bien dans la BD Mysql..."
 http -f localhost:8080/saturations
 
 sleep 1
 echo "La température et l'humidité du capteur 4 est à 60.2 et 70.0..."
-http -f localhost:8080/saturations capteur=4 sat=60.2
+http -f localhost:8080/saturations capteur_id=4 sat=60.2
 sleep 1
 echo "Les valeurs sont bien dans la BD Mysql..."
 http -f localhost:8080/saturations
