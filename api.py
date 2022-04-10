@@ -12,11 +12,15 @@ def dbInitialize():
     getDB().runUpdateQuery(query)
     query = "DROP TABLE IF EXISTS Humidite;"
     getDB().runUpdateQuery(query)
+    query = "DROP TABLE IF EXISTS Saturation;"
+    getDB().runUpdateQuery(query)
     query = "CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));"
     getDB().runUpdateQuery(query)
     query = "CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));"
     getDB().runUpdateQuery(query)
-    return 'Temperature, Humidite'
+    query = "CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));"
+    getDB().runUpdateQuery(query)
+    return 'Temperature, Humidite, Saturation'
 
 def getTemperatureFromDB():
     query = "SELECT * FROM Temperature;"
@@ -24,6 +28,10 @@ def getTemperatureFromDB():
 
 def getHumiditeFromDB():
     query = "SELECT * FROM Humidite;"
+    return getDB().runSelectQuery(query)
+
+def getSaturationFromDB():
+    query = "SELECT * FROM Saturation;"
     return getDB().runSelectQuery(query)
 
 def getTemperatureHumiditeFromDB(capteur):
@@ -37,6 +45,15 @@ def getTemperatureSenseurFromDB(capteur_id):
 def putTemperatureToDB(capteur, temperature, date):
     # query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", NOW());"
     query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", '" +  date + "');"
+    getDB().runUpdateQuery(query)
+
+def getSaturationFromDB(capteur_id):
+    query = "SELECT * FROM Saturation WHERE Capteur = " + capteur_id + ";"
+    return getDB().runSelectQuery(query)
+
+def putSaturationToDB(capteur, mesure, date):
+    # query = "INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (" + capteur + ", " + humidite + ", NOW());"
+    query = "INSERT INTO Saturation (Capteur, Mesuse, Date_capteur) VALUES (" + capteur + ", " + mesure + ", '" + date + "');"
     getDB().runUpdateQuery(query)
 
 def getHumiditeSenseurFromDB(capteur_id):
@@ -130,6 +147,33 @@ def route_humidites_get():
                                'Humidité': row[2],
                                'Date': row[3] }
     return jsonify({'Liste des humidités': json_return})
+
+# Saturation
+@app.route('/saturations', methods=['POST'])
+def route_saturations_post():
+    capteur_id = request.form.get('capteur_id')
+    mesure = request.form.get('sat')
+    if (not representsInt(capteur_id)) or (not representsFloat(sat)):
+        reponse = jsonify({'Erreur': 'capteur_id ou sat ne sont pas des entiers.'})
+    else:
+        now = datetime.datetime.now()
+        putSaturationToDB(capteur_id, mesure, now.strftime('%Y-%m-%d %H:%M:%S'))
+        valeurs_enr = dict()
+        valeurs_enr['capteur_id'] = capteur_id
+        valeurs_enr['sat'] = mesure
+        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+    return reponse
+
+# Saturation
+@app.route('/saturations', methods=['GET'])
+def route_saturations_get():
+    reponse_records = getSaturationFromDB()
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Capteur ID': row[1],
+                               'Saturation': row[2],
+                               'Date': row[3] }
+    return jsonify({'Liste des saturations': json_return})
 
 
 def route_capteur_generic_post(capteur_id):
