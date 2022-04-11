@@ -154,7 +154,7 @@ def route_saturations_post():
     capteur_id = request.form.get('capteur_id')
     mesure = request.form.get('sat')
     if (not representsInt(capteur_id)) or (not representsFloat(mesure)):
-        reponse = jsonify({'Erreur': 'capteur_id ou sat ne sont pas des entiers.'})
+        reponse = jsonify({'Erreur': "capteur_id ou sat n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
         putSaturationToDB(capteur_id, mesure, now.strftime('%Y-%m-%d %H:%M:%S'))
