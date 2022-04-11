@@ -53,7 +53,7 @@ def getSaturationSenseurFromDB(capteur_id):
 
 def putSaturationToDB(capteur, mesure, date):
     # query = "INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (" + capteur + ", " + humidite + ", NOW());"
-    query = "INSERT INTO Saturation (Capteur, Mesuse, Date_capteur) VALUES (" + capteur + ", " + mesure + ", '" + date + "');"
+    query = "INSERT INTO Saturation (Capteur, Mesure, Date_capteur) VALUES (" + capteur + ", " + mesure + ", '" + date + "');"
     getDB().runUpdateQuery(query)
 
 def getHumiditeSenseurFromDB(capteur_id):
@@ -100,7 +100,7 @@ def route_temperatures_post():
     capteur_id = request.form.get('capteur_id')
     temperature = request.form.get('temp')
     if (not representsInt(capteur_id)) or (not representsFloat(temperature)):
-        reponse = jsonify({'Erreur': 'capteur_id ou temp ne sont pas des entiers.'})
+        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
     else:
         now = datetime.datetime.now()
         putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
@@ -127,7 +127,7 @@ def route_humidites_post():
     capteur_id = request.form.get('capteur_id')
     humidite = request.form.get('hum')
     if (not representsInt(capteur_id)) or (not representsFloat(humidite)):
-        reponse = jsonify({'Erreur': 'capteur_id ou hum ne sont pas des entiers.'})
+        reponse = jsonify({'Erreur': "capteur_id ou hum n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
         putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
@@ -180,7 +180,7 @@ def route_capteur_generic_post(capteur_id):
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     if (not representsFloat(temperature)) or (not representsFloat(humidite)):
-        reponse = jsonify({'Erreur': 'capteur_id ou temp ne sont pas des entiers.'})
+        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
         putTemperatureToDB(str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
