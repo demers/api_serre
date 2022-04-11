@@ -47,7 +47,7 @@ def putTemperatureToDB(capteur, temperature, date):
     query = "INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", '" +  date + "');"
     getDB().runUpdateQuery(query)
 
-def getSaturationFromDB(capteur_id):
+def getSaturationSenseurFromDB(capteur_id):
     query = "SELECT * FROM Saturation WHERE Capteur = " + capteur_id + ";"
     return getDB().runSelectQuery(query)
 
