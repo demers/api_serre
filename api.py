@@ -30,8 +30,12 @@ def getHumiditeFromDB():
     query = "SELECT * FROM Humidite;"
     return getDB().runSelectQuery(query)
 
-def getSaturationFromDB():
-    query = "SELECT * FROM Saturation;"
+def getSaturationFromDB(capteur=0):
+    if capteur > 0:
+        query = "SELECT * FROM Saturation WHERE Capteur = " + str(capteur) + " ;"
+    else:
+        query = "SELECT * FROM Saturation;"
+
     return getDB().runSelectQuery(query)
 
 def getTemperatureHumiditeFromDB(capteur):
@@ -175,8 +179,7 @@ def route_saturations_get():
                                'Date': row[3] }
     return jsonify({'Liste des saturations': json_return})
 
-
-def route_capteur_generic_post(capteur_id):
+def route_capteur_hum_temp_post(capteur_id):
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     if (not representsFloat(temperature)) or (not representsFloat(humidite)):
@@ -192,7 +195,29 @@ def route_capteur_generic_post(capteur_id):
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
 
+def route_capteur_generic_post(capteur_id):
+    mesure = request.form.get('sat')
+    if not representsFloat(mesure):
+        reponse = jsonify({'Erreur': "sat n'a pas la bonne représentation."})
+    else:
+        now = datetime.datetime.now()
+        putSaturationToDB(str(capteur_id), mesure, now.strftime('%Y-%m-%d %H:%M:%S'))
+        valeurs_enr = dict()
+        valeurs_enr['capteur_id'] = str(capteur_id)
+        valeurs_enr['sat'] = mesure
+        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+    return reponse
+
 def route_capteur_generic_get(capteur_id):
+    reponse_records = getSaturationFromDB(capteur_id)
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Capteur ID': row[0],
+                               'Mesure': row[1],
+                               'Date': row[2] }
+    return jsonify({'Liste des mesures': json_return})
+
+def route_capteur_hum_temp_get(capteur_id):
     reponse_records = getTemperatureHumiditeFromDB(capteur_id)
     json_return = dict()
     for row in reponse_records:
@@ -204,19 +229,19 @@ def route_capteur_generic_get(capteur_id):
 
 @app.route('/capteur1', methods=['POST'])
 def route_capteur1_post():
-    return route_capteur_generic_post(1)
+    return route_capteur_hum_temp_post(1)
 
 @app.route('/capteur1', methods=['GET'])
 def route_capteur1_get():
-    return route_capteur_generic_get(1)
+    return route_capteur_hum_temp_get(1)
 
 @app.route('/capteur2', methods=['POST'])
 def route_capteur2_post():
-    return route_capteur_generic_post(2)
+    return route_capteur_hum_temp_post(2)
 
 @app.route('/capteur2', methods=['GET'])
 def route_capteur2_get():
-    return route_capteur_generic_get(2)
+    return route_capteur_hum_temp_get(2)
 
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
