@@ -212,9 +212,9 @@ def route_capteur_generic_get(capteur_id):
     reponse_records = getSaturationFromDB(capteur_id)
     json_return = dict()
     for row in reponse_records:
-        json_return[row[0]] = { 'Capteur ID': row[0],
-                               'Mesure': row[1],
-                               'Date': row[2] }
+        json_return[row[0]] = { 'Capteur ID': row[1],
+                               'Mesure': row[2],
+                               'Date': row[3] }
     return jsonify({'Liste des mesures': json_return})
 
 def route_capteur_hum_temp_get(capteur_id):
