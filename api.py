@@ -245,6 +245,19 @@ def route_saturations_get():
                                'Date': row[3] }
     return jsonify({'Liste des saturations': json_return})
 
+@app.route('/moniteur', methods=['GET'])
+def route_capteur1_capteur2_get():
+    reponse_records_capteur1 = getTemperatureFromDB(False, 1)
+    reponse_records_capteur2 = getTemperatureFromDB(False, 2)
+    json_return = dict()
+    json_return = { 'Capteur ID': reponse_records_capteur1[0][1],
+                        'Température': reponse_records_capteur1[0][2],
+                        'Date': reponse_records_capteur1[0][3] }
+                        'Capteur ID': reponse_records_capteur2[0][1],
+                        'Humidité': reponse_records_capteur2[0][2],
+                        'Date': reponse_records_capteur2[0][3] }
+    return jsonify({'Liste des températures et humidités': json_return})
+
 def route_capteur_hum_temp_post(test = True, capteur_id):
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
@@ -273,6 +286,17 @@ def route_capteur_gen_sat_post(test = True, capteur_id):
         valeurs_enr['sat'] = mesure
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
+
+def route_capteur_hum_temp_get(test = True, capteur_id):
+    reponse_records = getTemperatureHumiditeFromDB(test, capteur_id)
+    json_return = dict()
+    for row in reponse_records:
+        json_return[row[0]] = { 'Capteur ID': row[1],
+                               'Température': row[2],
+                               'Humidité': row[3],
+                               'Date': row[4] }
+    return jsonify({'Liste des températures et humidités': json_return})
+
 
 def route_capteur_gen_sat_get(test = True, capteur_id):
     reponse_records = getSaturationFromDB(test, capteur_id)
