@@ -7,7 +7,7 @@ import datetime
 def getDB():
     return mysqldb.MYSQLDB.getInstance()
 
-def dbInitialize():
+def dbInitialize_global():
     query = "DROP TABLE IF EXISTS Temperature;"
     getDB().runUpdateQuery(query)
     query = "DROP TABLE IF EXISTS Humidite;"
@@ -21,6 +21,21 @@ def dbInitialize():
     query = "CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));"
     getDB().runUpdateQuery(query)
     return 'Temperature, Humidite, Saturation'
+
+def dbInitialize():
+    query = "DROP TABLE IF EXISTS Temperature_test;"
+    getDB().runUpdateQuery(query)
+    query = "DROP TABLE IF EXISTS Humidite_test;"
+    getDB().runUpdateQuery(query)
+    query = "DROP TABLE IF EXISTS Saturation_test;"
+    getDB().runUpdateQuery(query)
+    query = "CREATE TABLE Temperature_test (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));"
+    getDB().runUpdateQuery(query)
+    query = "CREATE TABLE Humidite_test (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));"
+    getDB().runUpdateQuery(query)
+    query = "CREATE TABLE Saturation_test (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));"
+    getDB().runUpdateQuery(query)
+    return 'Temperature_test, Humidite_test, Saturation_test'
 
 def getTemperatureFromDB():
     query = "SELECT * FROM Temperature;"
@@ -92,6 +107,11 @@ def hello():
 def welcome():
 	return hello()
 
+
+@app.route('/initialize_global')
+def route_initialize():
+    reponse = dbInitialize_global()
+    return jsonify({'Réinitialisation.  Tables recréées ': reponse})
 
 @app.route('/initialize')
 def route_initialize():
