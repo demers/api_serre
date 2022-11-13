@@ -264,7 +264,7 @@ def route_capteur1_capteur2_get():
     json_return = dict()
     json_return = { 'Capteur ID': reponse_records_capteur1[0][1],
                         'Température': reponse_records_capteur1[0][2],
-                        'Date': reponse_records_capteur1[0][3] }
+                        'Date': reponse_records_capteur1[0][3],
                         'Capteur ID': reponse_records_capteur2[0][1],
                         'Humidité': reponse_records_capteur2[0][2],
                         'Date': reponse_records_capteur2[0][3] }
