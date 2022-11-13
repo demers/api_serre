@@ -384,12 +384,12 @@ def route_capteur2_get():
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
     #return route_capteur_gen_sat_post(3)
-    return route_capteur_hum_temp_post(3, False)
+    return route_capteur_gen_temp_post(3, False)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
     #return route_capteur_gen_sat_get(3)
-    return route_capteur_hum_temp_get(3, False)
+    return route_capteur_gen_temp_get(3, False)
 
 @app.route('/capteur4', methods=['POST'])
 def route_capteur4_post():
