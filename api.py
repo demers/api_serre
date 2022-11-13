@@ -30,21 +30,22 @@ def dbInitialize(test = True):
     getDB().runUpdateQuery(query)
     return 'Temperature' + test_str + ', Humidite' + test_str + ', Saturation' + test_str
 
-def getTemperatureFromDB(test = True, capteur=0, last = False):
+def getTemperatureFromDB(test = True, capteur = 0, last = False):
     if test:
         test_str = '_test'
     else:
         test_str = ''
     if last:
-        last_str = ' WHERE Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
-        last_str_2 = ' AND Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
+        last_str = ' ORDER BY Temperature_id DESC LIMIT 1'
+        #last_str = ' WHERE Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
+        #last_str_2 = ' AND Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
     else:
         last_str = ''
-        last_str_2 = ''
+        #last_str_2 = ''
     if capteur < 1:
         query = "SELECT * FROM Temperature" + test_str + last_str  + ';'
     else:
-        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ";"
+        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
     return getDB().runSelectQuery(query)
 
 def getHumiditeFromDB(test = True, capteur=0, last = False):
@@ -53,13 +54,14 @@ def getHumiditeFromDB(test = True, capteur=0, last = False):
     else:
         test_str = ''
     if last:
-        last_str = ' WHERE Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
-        last_str_2 = ' AND Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
+        last_str = ' ORDER BY Humidite_id DESC LIMIT 1'
+        #last_str = ' WHERE Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
+        #last_str_2 = ' AND Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
     else:
         last_str = ''
-        last_str = ''
+        #last_str_2 = ''
     if capteur > 0:
-        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ';'
+        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
     else:
         query = "SELECT * FROM Humidite" + test_str + last_str + ';'
     return getDB().runSelectQuery(query)
@@ -70,14 +72,15 @@ def getSaturationFromDB(test = True, capteur=0, last = False):
     else:
         test_str = ''
     if last:
-        last_str = ' WHERE Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
-        last_str_2 = ' AND Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
+        last_str = ' ORDER BY Saturation_id DESC LIMIT 1'
+        #last_str = ' WHERE Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
+        #last_str_2 = ' AND Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
     else:
         last_str = ''
-        last_str_2 = ''
+        #last_str_2 = ''
 
     if capteur > 0:
-        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ';'
+        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
     else:
         query = "SELECT * FROM Saturation" + test_str + last_str + ';'
     return getDB().runSelectQuery(query)
