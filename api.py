@@ -201,7 +201,7 @@ def route_temperatures_post():
 
 @app.route('/temperatures', methods=['GET'])
 def route_temperatures_get():
-    reponse_records = getTemperatureFromDB(False)
+    reponse_records = getTemperatureFromDB(False, 0, False)
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
@@ -352,69 +352,69 @@ def route_capteur_gen_temp_post(capteur_id, test = True):
 
 @app.route('/capteur1', methods=['POST'])
 def route_capteur1_post():
-    return route_capteur_hum_temp_post(False, 1)
+    return route_capteur_hum_temp_post(1, False)
 
 @app.route('/capteur1', methods=['GET'])
 def route_capteur1_get():
-    return route_capteur_hum_temp_get(False, 1)
+    return route_capteur_hum_temp_get(1, False)
 
 @app.route('/capteur2', methods=['POST'])
 def route_capteur2_post():
-    return route_capteur_hum_temp_post(False, 2)
+    return route_capteur_hum_temp_post(2, False)
 
 @app.route('/capteur2', methods=['GET'])
 def route_capteur2_get():
-    return route_capteur_hum_temp_get(False, 2)
+    return route_capteur_hum_temp_get(2, False)
 
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
     #return route_capteur_gen_sat_post(3)
-    return route_capteur_hum_temp_post(False, 3)
+    return route_capteur_hum_temp_post(3, False)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
     #return route_capteur_gen_sat_get(3)
-    return route_capteur_hum_temp_get(False, 3)
+    return route_capteur_hum_temp_get(3, False)
 
 @app.route('/capteur4', methods=['POST'])
 def route_capteur4_post():
-    return route_capteur_gen_sat_post(False, 4)
+    return route_capteur_gen_sat_post(4, False)
 
 @app.route('/capteur4', methods=['GET'])
 def route_capteur4_get():
-    return route_capteur_gen_sat_get(False, 4)
+    return route_capteur_gen_sat_get(4, False)
 
 @app.route('/capteur5', methods=['POST'])
 def route_capteur5_post():
-    return route_capteur_gen_sat_post(False, 5)
+    return route_capteur_gen_sat_post(5, False)
 
 @app.route('/capteur5', methods=['GET'])
 def route_capteur5_get():
-    return route_capteur_gen_sat_get(False, 5)
+    return route_capteur_gen_sat_get(5, False)
 
 @app.route('/capteur6', methods=['POST'])
 def route_capteur6_post():
-    return route_capteur_gen_sat_post(False, 6)
+    return route_capteur_gen_sat_post(6, False)
 
 @app.route('/capteur6', methods=['GET'])
 def route_capteur6_get():
-    return route_capteur_gen_sat_get(False, 6)
+    return route_capteur_gen_sat_get(6, False)
 
 @app.route('/capteur7', methods=['POST'])
 def route_capteur7_post():
-    return route_capteur_gen_sat_post(False, 7)
+    return route_capteur_gen_sat_post(7, False)
 
 @app.route('/capteur7', methods=['GET'])
 def route_capteur7_get():
-    return route_capteur_gen_sat_get(False, 7)
+    return route_capteur_gen_sat_get(7, False)
 
 @app.route('/capteur8', methods=['POST'])
 def route_capteur8_post():
-    return route_capteur_gen_sat_post(False, 8)
+    return route_capteur_gen_sat_post(8, False)
 
 @app.route('/capteur8', methods=['GET'])
 def route_capteur8_get():
-    return route_capteur_gen_sat_get(False, 8)
+    return route_capteur_gen_sat_get(8, False)
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
