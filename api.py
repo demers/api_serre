@@ -235,7 +235,7 @@ def route_humidites_post():
 
 @app.route('/humidites', methods=['GET'])
 def route_humidites_get():
-    reponse_records = getHumiditeFromDB(False)
+    reponse_records = getHumiditeFromDB(False, 0, False)
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
@@ -273,16 +273,20 @@ def route_saturations_get():
 @app.route('/moniteur', methods=['GET'])
 def route_capteur1_capteur2_get():
     # Obtenir les dernières valeurs des capteurs...
-    reponse_records_capteur1 = getTemperatureFromDB(False, 1, True)
-    reponse_records_capteur2 = getTemperatureFromDB(False, 2, True)
+    reponse_temp_capteur1 = getTemperatureFromDB(False, 1, True)
+    reponse_temp_capteur2 = getTemperatureFromDB(False, 2, True)
+    reponse_hum_capteur1 = getHumiditeFromDB(False, 1, True)
+    reponse_hum_capteur2 = getHumiditeFromDB(False, 2, True)
     json_return = dict()
-    json_return = { 'Capteur ID': reponse_records_capteur1[1],
-                        'Température': reponse_records_capteur1[2],
-                        'Date': reponse_records_capteur1[3],
-                        'Capteur ID': reponse_records_capteur2[1],
-                        'Humidité': reponse_records_capteur2[2],
-                        'Date': reponse_records_capteur2[3] }
-    return jsonify({'Liste des températures et humidités': json_return})
+    json_return = { 'Capteur ID': reponse_temp_capteur1[1],
+                        'Température': reponse_temp_capteur1[2],
+                        'Humidité': reponse_hum_capteur1[2],
+                        'Date': reponse_temp_capteur1[3],
+                        'Capteur ID': reponse_temp_capteur2[1],
+                        'Température': reponse_temp_capteur2[2],
+                        'Humidité': reponse_hum_capteur2[2],
+                        'Date': reponse_temp_capteur2[3] }
+    return jsonify({'Températures et humidités des capteurs 1 et 2': json_return})
 
 def route_capteur_hum_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
