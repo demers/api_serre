@@ -36,13 +36,15 @@ def getTemperatureFromDB(test = True, capteur=0, last = False):
     else:
         test_str = ''
     if last:
-        last_str = ' AND Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
+        last_str = ' WHERE Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
+        last_str_2 = ' AND Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
     else:
         last_str = ''
+        last_str_2 = ''
     if capteur < 1:
         query = "SELECT * FROM Temperature" + test_str + last_str  + ';'
     else:
-        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ";"
+        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ";"
     return getDB().runSelectQuery(query)
 
 def getHumiditeFromDB(test = True, capteur=0, last = False):
@@ -51,11 +53,13 @@ def getHumiditeFromDB(test = True, capteur=0, last = False):
     else:
         test_str = ''
     if last:
-        last_str = ' AND Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
+        last_str = ' WHERE Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
+        last_str_2 = ' AND Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
     else:
         last_str = ''
+        last_str = ''
     if capteur > 0:
-        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
+        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ';'
     else:
         query = "SELECT * FROM Humidite" + test_str + last_str + ';'
     return getDB().runSelectQuery(query)
@@ -66,16 +70,19 @@ def getSaturationFromDB(test = True, capteur=0, last = False):
     else:
         test_str = ''
     if last:
-        last_str = ' AND Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
+        last_str = ' WHERE Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
+        last_str_2 = ' AND Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
     else:
         last_str = ''
+        last_str_2 = ''
+
     if capteur > 0:
-        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
+        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + last_str_2 + ';'
     else:
         query = "SELECT * FROM Saturation" + test_str + last_str + ';'
     return getDB().runSelectQuery(query)
 
-def getTemperatureHumiditeFromDB(test = True, capteur):
+def getTemperatureHumiditeFromDB(capteur, test = True):
     if test:
         test_str = '_test'
     else:
@@ -84,7 +91,7 @@ def getTemperatureHumiditeFromDB(test = True, capteur):
     query = "SELECT Temperature" + test_str + ".Temperature_id, Temperature" + test_str + ".Capteur, Temperature" + test_str + ".Temp, Humidite" + test_str + ".Hum, Temperature" + test_str + ".Date_capteur FROM Temperature" + test_str + ", Humidite" + test_str + " WHERE Temperature" + test_str + ".Temperature_id = Humidite" + test_str + ".Humidite_id and Temperature" + test_str + ".Capteur = " + str(capteur) + ";"
     return getDB().runSelectQuery(query)
 
-def getTemperatureSenseurFromDB(test = True, capteur_id):
+def getTemperatureSenseurFromDB(capteur_id, test = True):
     if test:
         test_str = '_test'
     else:
@@ -93,7 +100,7 @@ def getTemperatureSenseurFromDB(test = True, capteur_id):
     #query = "SELECT * FROM Temperature WHERE Capteur = " + capteur_id + ";"
     return getDB().runSelectQuery(query)
 
-def putTemperatureToDB(test = True, capteur, temperature, date):
+def putTemperatureToDB(capteur, temperature, date, test = True):
     if test:
         test_str = '_test'
     else:
@@ -103,7 +110,7 @@ def putTemperatureToDB(test = True, capteur, temperature, date):
     query = "INSERT INTO Temperature" + test_str + " (Capteur, Temp, Date_capteur) VALUES (" + capteur + ", " + temperature + ", '" +  date + "');"
     getDB().runUpdateQuery(query)
 
-def getSaturationSenseurFromDB(test = True, capteur_id):
+def getSaturationSenseurFromDB(capteur_id, test = True):
     if test:
         test_str = '_test'
     else:
@@ -112,7 +119,7 @@ def getSaturationSenseurFromDB(test = True, capteur_id):
     query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + capteur_id + ";"
     return getDB().runSelectQuery(query)
 
-def putSaturationToDB(test= True, capteur, mesure, date):
+def putSaturationToDB(capteur, mesure, date, test = True):
     if test:
         test_str = '_test'
     else:
@@ -122,7 +129,7 @@ def putSaturationToDB(test= True, capteur, mesure, date):
     query = "INSERT INTO Saturation" + test_str + " (Capteur, Mesure, Date_capteur) VALUES (" + capteur + ", " + mesure + ", '" + date + "');"
     getDB().runUpdateQuery(query)
 
-def getHumiditeSenseurFromDB(test = True, capteur_id):
+def getHumiditeSenseurFromDB(capteur_id, test = True):
     if test:
         test_str = '_test'
     else:
@@ -131,7 +138,7 @@ def getHumiditeSenseurFromDB(test = True, capteur_id):
     query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + capteur_id + ";"
     return getDB().runSelectQuery(query)
 
-def putHumiditeToDB(test = True, capteur, humidite, date):
+def putHumiditeToDB(capteur, humidite, date, test = True):
     if test:
         test_str = '_test'
     else:
@@ -184,7 +191,7 @@ def route_temperatures_post():
         reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(False, capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
@@ -211,7 +218,7 @@ def route_humidites_post():
         reponse = jsonify({'Erreur': "capteur_id ou hum n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
-        putHumiditeToDB(False, capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['hum'] = humidite
@@ -238,7 +245,7 @@ def route_saturations_post():
         reponse = jsonify({'Erreur': "capteur_id ou sat n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
-        putSaturationToDB(False, capteur_id, mesure, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putSaturationToDB(capteur_id, mesure, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['sat'] = mesure
@@ -270,15 +277,15 @@ def route_capteur1_capteur2_get():
                         'Date': reponse_records_capteur2[0][3] }
     return jsonify({'Liste des températures et humidités': json_return})
 
-def route_capteur_hum_temp_post(test = True, capteur_id):
+def route_capteur_hum_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     if (not representsFloat(temperature)) or (not representsFloat(humidite)):
         reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(test, str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
-        putHumiditeToDB(test, str(capteur_id), humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'), test)
+        putHumiditeToDB(str(capteur_id), humidite, now.strftime('%Y-%m-%d %H:%M:%S'), test)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = str(capteur_id)
         valeurs_enr['temp'] = temperature
@@ -286,21 +293,21 @@ def route_capteur_hum_temp_post(test = True, capteur_id):
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
 
-def route_capteur_gen_sat_post(test = True, capteur_id):
+def route_capteur_gen_sat_post(capteur_id, test = True):
     mesure = request.form.get('sat')
     if not representsFloat(mesure):
         reponse = jsonify({'Erreur': "sat n'a pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
-        putSaturationToDB(test, str(capteur_id), mesure, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putSaturationToDB(str(capteur_id), mesure, now.strftime('%Y-%m-%d %H:%M:%S'), test)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = str(capteur_id)
         valeurs_enr['sat'] = mesure
         reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
     return reponse
 
-def route_capteur_hum_temp_get(test = True, capteur_id):
-    reponse_records = getTemperatureHumiditeFromDB(test, capteur_id)
+def route_capteur_hum_temp_get(capteur_id, test = True):
+    reponse_records = getTemperatureHumiditeFromDB(capteur_id, test)
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
@@ -310,7 +317,7 @@ def route_capteur_hum_temp_get(test = True, capteur_id):
     return jsonify({'Liste des températures et humidités': json_return})
 
 
-def route_capteur_gen_sat_get(test = True, capteur_id):
+def route_capteur_gen_sat_get(capteur_id, test = True):
     reponse_records = getSaturationFromDB(test, capteur_id)
     json_return = dict()
     for row in reponse_records:
@@ -319,8 +326,8 @@ def route_capteur_gen_sat_get(test = True, capteur_id):
                                'Date': row[3] }
     return jsonify({'Liste des mesures': json_return})
 
-def route_capteur_gen_temp_get(test = True, capteur_id):
-    reponse_records = getTemperatureFromDB(test, capteur_id)
+def route_capteur_gen_temp_get(capteur_id, test = True):
+    reponse_records = getTemperatureFromDB(test, capteur_id, False)
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
@@ -328,13 +335,13 @@ def route_capteur_gen_temp_get(test = True, capteur_id):
                                'Date': row[3] }
     return jsonify({'Liste des températures': json_return})
 
-def route_capteur_gen_temp_post(test = True, capteur_id):
+def route_capteur_gen_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
     if (not representsInt(capteur_id)) or (not representsFloat(temperature)):
         reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(test, capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'), test)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
