@@ -185,7 +185,7 @@ def welcome():
 @app.route('/initialize')
 def route_initialize():
     reponse = dbInitialize(True)
-    return jsonify({'Réinitialisation.  Tables recréées ': reponse})
+    return jsonify({'Réinitialisation des tables tests.  Tables recréées ': reponse})
 
 @app.route('/initialize_global')
 def route_initialize_global():
