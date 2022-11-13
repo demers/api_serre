@@ -30,38 +30,49 @@ def dbInitialize(test = True):
     getDB().runUpdateQuery(query)
     return 'Temperature' + test_str + ', Humidite' + test_str + ', Saturation' + test_str
 
-def getTemperatureFromDB(test = True, capteur=0):
+def getTemperatureFromDB(test = True, capteur=0, last = False):
     if test:
         test_str = '_test'
     else:
         test_str = ''
-    if capteur < 1:
-        query = "SELECT * FROM Temperature" + test_str + ';'
+    if last:
+        last_str = ' AND Temperature_id=(SELECT MAX(Temperature_id) FROM Temperature)'
     else:
-        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + " ;"
+        last_str = ''
+    if capteur < 1:
+        query = "SELECT * FROM Temperature" + test_str + last_str  + ';'
+    else:
+        query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ";"
     return getDB().runSelectQuery(query)
 
-def getHumiditeFromDB(test = True, capteur=0):
+def getHumiditeFromDB(test = True, capteur=0, last = False):
     if test:
         test_str = '_test'
     else:
         test_str = ''
-    if capteur < 1:
-        query = "SELECT * FROM Humidite" + test_str + ';'
+    if last:
+        last_str = ' AND Humidite_id=(SELECT MAX(Humidite_id) FROM Humidite)'
     else:
-        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + " ;"
-    return getDB().runSelectQuery(query)
-
-def getSaturationFromDB(test = True, capteur=0):
-    if test:
-        test_str = '_test'
-    else:
-        test_str = ''
+        last_str = ''
     if capteur > 0:
-        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + " ;"
+        query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
     else:
-        query = "SELECT * FROM Saturation" + test_str + ';'
+        query = "SELECT * FROM Humidite" + test_str + last_str + ';'
+    return getDB().runSelectQuery(query)
 
+def getSaturationFromDB(test = True, capteur=0, last = False):
+    if test:
+        test_str = '_test'
+    else:
+        test_str = ''
+    if last:
+        last_str = ' AND Saturation_id=(SELECT MAX(Saturation_id) FROM Saturation)'
+    else:
+        last_str = ''
+    if capteur > 0:
+        query = "SELECT * FROM Saturation" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
+    else:
+        query = "SELECT * FROM Saturation" + test_str + last_str + ';'
     return getDB().runSelectQuery(query)
 
 def getTemperatureHumiditeFromDB(test = True, capteur):
@@ -173,7 +184,7 @@ def route_temperatures_post():
         reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
     else:
         now = datetime.datetime.now()
-        putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putTemperatureToDB(False, capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'))
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
@@ -200,7 +211,7 @@ def route_humidites_post():
         reponse = jsonify({'Erreur': "capteur_id ou hum n'ont pas la bonne représentation."})
     else:
         now = datetime.datetime.now()
-        putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
+        putHumiditeToDB(False, capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'))
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['hum'] = humidite
@@ -247,8 +258,9 @@ def route_saturations_get():
 
 @app.route('/moniteur', methods=['GET'])
 def route_capteur1_capteur2_get():
-    reponse_records_capteur1 = getTemperatureFromDB(False, 1)
-    reponse_records_capteur2 = getTemperatureFromDB(False, 2)
+    # Obtenir les dernières valeurs des capteurs...
+    reponse_records_capteur1 = getTemperatureFromDB(False, 1, True)
+    reponse_records_capteur2 = getTemperatureFromDB(False, 2, True)
     json_return = dict()
     json_return = { 'Capteur ID': reponse_records_capteur1[0][1],
                         'Température': reponse_records_capteur1[0][2],
@@ -333,69 +345,69 @@ def route_capteur_gen_temp_post(test = True, capteur_id):
 
 @app.route('/capteur1', methods=['POST'])
 def route_capteur1_post():
-    return route_capteur_hum_temp_post(1)
+    return route_capteur_hum_temp_post(False, 1)
 
 @app.route('/capteur1', methods=['GET'])
 def route_capteur1_get():
-    return route_capteur_hum_temp_get(1)
+    return route_capteur_hum_temp_get(False, 1)
 
 @app.route('/capteur2', methods=['POST'])
 def route_capteur2_post():
-    return route_capteur_hum_temp_post(2)
+    return route_capteur_hum_temp_post(False, 2)
 
 @app.route('/capteur2', methods=['GET'])
 def route_capteur2_get():
-    return route_capteur_hum_temp_get(2)
+    return route_capteur_hum_temp_get(False, 2)
 
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
     #return route_capteur_gen_sat_post(3)
-    return route_capteur_hum_temp_post(3)
+    return route_capteur_hum_temp_post(False, 3)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
     #return route_capteur_gen_sat_get(3)
-    return route_capteur_hum_temp_get(3)
+    return route_capteur_hum_temp_get(False, 3)
 
 @app.route('/capteur4', methods=['POST'])
 def route_capteur4_post():
-    return route_capteur_gen_sat_post(4)
+    return route_capteur_gen_sat_post(False, 4)
 
 @app.route('/capteur4', methods=['GET'])
 def route_capteur4_get():
-    return route_capteur_gen_sat_get(4)
+    return route_capteur_gen_sat_get(False, 4)
 
 @app.route('/capteur5', methods=['POST'])
 def route_capteur5_post():
-    return route_capteur_gen_sat_post(5)
+    return route_capteur_gen_sat_post(False, 5)
 
 @app.route('/capteur5', methods=['GET'])
 def route_capteur5_get():
-    return route_capteur_gen_sat_get(5)
+    return route_capteur_gen_sat_get(False, 5)
 
 @app.route('/capteur6', methods=['POST'])
 def route_capteur6_post():
-    return route_capteur_gen_sat_post(6)
+    return route_capteur_gen_sat_post(False, 6)
 
 @app.route('/capteur6', methods=['GET'])
 def route_capteur6_get():
-    return route_capteur_gen_sat_get(6)
+    return route_capteur_gen_sat_get(False, 6)
 
 @app.route('/capteur7', methods=['POST'])
 def route_capteur7_post():
-    return route_capteur_gen_sat_post(7)
+    return route_capteur_gen_sat_post(False, 7)
 
 @app.route('/capteur7', methods=['GET'])
 def route_capteur7_get():
-    return route_capteur_gen_sat_get(7)
+    return route_capteur_gen_sat_get(False, 7)
 
 @app.route('/capteur8', methods=['POST'])
 def route_capteur8_post():
-    return route_capteur_gen_sat_post(8)
+    return route_capteur_gen_sat_post(False, 8)
 
 @app.route('/capteur8', methods=['GET'])
 def route_capteur8_get():
-    return route_capteur_gen_sat_get(8)
+    return route_capteur_gen_sat_get(False, 8)
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port = 8080)
