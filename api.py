@@ -46,7 +46,11 @@ def getTemperatureFromDB(test = True, capteur = 0, last = False):
         query = "SELECT * FROM Temperature" + test_str + last_str  + ';'
     else:
         query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
-    return getDB().runSelectQuery(query)
+    if last:
+        return getDB().runSelectOneQuery(query)
+    else:
+        return getDB().runSelectQuery(query)
+
 
 def getHumiditeFromDB(test = True, capteur=0, last = False):
     if test:

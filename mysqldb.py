@@ -61,3 +61,20 @@ class MYSQLDB():
                 conn.close()
                 cursor.close()
         return records
+
+    def runSelectOneQuery(self, query):
+        record = ()
+        try:
+            conn = mysql.connector.connect(**self.getConfig())
+            cursor = conn.cursor()
+            print(query, flush=True)
+            cursor.execute(query)
+            record = cursor.fetchone()
+            conn.commit()
+        except Exception as e:
+            print("some exception occurred: " + str(e), flush=True)
+        finally:
+            if conn.is_connected():
+                conn.close()
+                cursor.close()
+        return record
