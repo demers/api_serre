@@ -282,7 +282,7 @@ def route_capteur1_capteur2_get():
     reponse_hum_capteur2 = getHumiditeFromDB(False, 2, True)
     json_return = dict()
     json_return[0] = {  'Capteur ID': reponse_temp_capteur1[1],
-                        'Température' + : reponse_temp_capteur1[2],
+                        'Température': reponse_temp_capteur1[2],
                         'Humidité': reponse_hum_capteur1[2],
                         'Date': reponse_temp_capteur1[3] }
 
