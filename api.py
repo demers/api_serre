@@ -281,7 +281,7 @@ def route_capteur1_capteur2_capteur3_get():
     reponse_temp_capteur3 = getTemperatureFromDB(False, 3, True)
     reponse_hum_capteur1 = getHumiditeFromDB(False, 1, True)
     reponse_hum_capteur2 = getHumiditeFromDB(False, 2, True)
-    reponse_hum_capteur3 = getHumiditeFromDB(False, 3, True)
+    #reponse_hum_capteur3 = getHumiditeFromDB(False, 3, True)
     json_return = dict()
     json_return[1] = {  'Capteur ID': reponse_temp_capteur1[1],
                         'Température': reponse_temp_capteur1[2],
@@ -295,7 +295,7 @@ def route_capteur1_capteur2_capteur3_get():
 
     json_return[3] = {  'Capteur ID': reponse_temp_capteur3[1],
                         'Température': reponse_temp_capteur3[2],
-                        'Humidité': reponse_hum_capteur3[2],
+     #                   'Humidité': reponse_hum_capteur3[2],
                         'Date': reponse_temp_capteur3[3] }
     return jsonify({'Températures et humidités des capteurs 1, 2 et 3': json_return})
 
@@ -392,11 +392,13 @@ def route_capteur2_get():
 def route_capteur3_post():
     #return route_capteur_gen_sat_post(3)
     return route_capteur_gen_temp_post(3, False)
+    # return route_capteur_hum_temp_post(3, False)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
     #return route_capteur_gen_sat_get(3)
     return route_capteur_gen_temp_get(3, False)
+    # return route_capteur_hum_temp_get(3, False)
 
 @app.route('/capteur4', methods=['POST'])
 def route_capteur4_post():
