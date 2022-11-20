@@ -274,12 +274,14 @@ def route_saturations_get():
     return jsonify({'Liste des saturations': json_return})
 
 @app.route('/moniteur', methods=['GET'])
-def route_capteur1_capteur2_get():
+def route_capteur1_capteur2_capteur3_get():
     # Obtenir les dernières valeurs des capteurs...
     reponse_temp_capteur1 = getTemperatureFromDB(False, 1, True)
     reponse_temp_capteur2 = getTemperatureFromDB(False, 2, True)
+    reponse_temp_capteur3 = getTemperatureFromDB(False, 3, True)
     reponse_hum_capteur1 = getHumiditeFromDB(False, 1, True)
     reponse_hum_capteur2 = getHumiditeFromDB(False, 2, True)
+    reponse_hum_capteur3 = getHumiditeFromDB(False, 3, True)
     json_return = dict()
     json_return[1] = {  'Capteur ID': reponse_temp_capteur1[1],
                         'Température': reponse_temp_capteur1[2],
@@ -290,7 +292,12 @@ def route_capteur1_capteur2_get():
                         'Température': reponse_temp_capteur2[2],
                         'Humidité': reponse_hum_capteur2[2],
                         'Date': reponse_temp_capteur2[3] }
-    return jsonify({'Températures et humidités des capteurs 1 et 2': json_return})
+
+    json_return[3] = {  'Capteur ID': reponse_temp_capteur3[1],
+                        'Température': reponse_temp_capteur3[2],
+                        'Humidité': reponse_hum_capteur3[2],
+                        'Date': reponse_temp_capteur3[3] }
+    return jsonify({'Températures et humidités des capteurs 1, 2 et 3': json_return})
 
 def route_capteur_hum_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
