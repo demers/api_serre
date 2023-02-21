@@ -216,7 +216,7 @@ def route_temperatures_get():
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
-                               'Température': row[2],
+                               'Temperature': row[2],
                                'Date': row[3] }
     return jsonify({'Liste des températures': json_return})
 
@@ -243,7 +243,7 @@ def route_humidites_get():
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
-                               'Humidité': row[2],
+                               'Humidite': row[2],
                                'Date': row[3] }
     return jsonify({'Liste des humidités': json_return})
 
@@ -285,20 +285,20 @@ def route_capteur1_capteur2_capteur3_get():
     #reponse_hum_capteur3 = getHumiditeFromDB(False, 3, True)
     json_return = dict()
     json_return[1] = {  'Capteur ID': reponse_temp_capteur1[1],
-                        'Température': reponse_temp_capteur1[2],
-                        'Humidité': reponse_hum_capteur1[2],
+                        'Temperature': reponse_temp_capteur1[2],
+                        'Humidite': reponse_hum_capteur1[2],
                         'Date': reponse_temp_capteur1[3] }
 
     json_return[2] = {  'Capteur ID': reponse_temp_capteur2[1],
-                        'Température': reponse_temp_capteur2[2],
-                        'Humidité': reponse_hum_capteur2[2],
+                        'Temperature': reponse_temp_capteur2[2],
+                        'Humidite': reponse_hum_capteur2[2],
                         'Date': reponse_temp_capteur2[3] }
 
     json_return[3] = {  'Capteur ID': reponse_temp_capteur3[1],
-                        'Température': reponse_temp_capteur3[2],
-     #                   'Humidité': reponse_hum_capteur3[2],
+                        'Temperature': reponse_temp_capteur3[2],
+     #                   'Humidite': reponse_hum_capteur3[2],
                         'Date': reponse_temp_capteur3[3] }
-    return jsonify({'Températures et humidités des capteurs 1, 2 et 3': json_return})
+    return jsonify({'Temperatures et humidites des capteurs 1, 2 et 3': json_return})
 
 def route_capteur_hum_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
@@ -334,8 +334,8 @@ def route_capteur_hum_temp_get(capteur_id, test = True):
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
-                               'Température': row[2],
-                               'Humidité': row[3],
+                               'Temperature': row[2],
+                               'Humidite': row[3],
                                'Date': row[4] }
     return jsonify({'Liste des températures et humidités': json_return})
 
@@ -354,9 +354,9 @@ def route_capteur_gen_temp_get(capteur_id, test = True):
     json_return = dict()
     for row in reponse_records:
         json_return[row[0]] = { 'Capteur ID': row[1],
-                               'Température': row[2],
+                               'Temperature': row[2],
                                'Date': row[3] }
-    return jsonify({'Liste des températures': json_return})
+    return jsonify({'Liste des temperatures': json_return})
 
 def route_capteur_gen_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
