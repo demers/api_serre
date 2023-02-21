@@ -186,12 +186,12 @@ def welcome():
 @app.route('/initialize')
 def route_initialize():
     reponse = dbInitialize(True)
-    return jsonify({'Réinitialisation des tables tests.  Tables recréées ': reponse})
+    return jsonify({'Reinitialisation des tables tests.  Tables recreees ': reponse})
 
 @app.route('/initialize_global')
 def route_initialize_global():
     reponse = dbInitialize(False)
-    return jsonify({'Réinitialisation des tables test.  Tables recréées ': reponse})
+    return jsonify({'Reinitialisation des tables test.  Tables recreees ': reponse})
 
 
 @app.route('/temperatures', methods=['POST'])
@@ -199,14 +199,14 @@ def route_temperatures_post():
     capteur_id = request.form.get('capteur_id')
     temperature = request.form.get('temp')
     if (not representsInt(capteur_id)) or (not representsFloat(temperature)):
-        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
+        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne representation"})
     else:
         now = datetime.datetime.now()
         putTemperatureToDB(capteur_id, temperature, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 
@@ -218,7 +218,7 @@ def route_temperatures_get():
         json_return[row[0]] = { 'Capteur ID': row[1],
                                'Temperature': row[2],
                                'Date': row[3] }
-    return jsonify({'Liste des températures': json_return})
+    return jsonify({'Liste des temperatures': json_return})
 
 
 @app.route('/humidites', methods=['POST'])
@@ -226,14 +226,14 @@ def route_humidites_post():
     capteur_id = request.form.get('capteur_id')
     humidite = request.form.get('hum')
     if (not representsInt(capteur_id)) or (not representsFloat(humidite)):
-        reponse = jsonify({'Erreur': "capteur_id ou hum n'ont pas la bonne représentation."})
+        reponse = jsonify({'Erreur': "capteur_id ou hum n'ont pas la bonne representation."})
     else:
         now = datetime.datetime.now()
         putHumiditeToDB(capteur_id, humidite, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['hum'] = humidite
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 
@@ -245,7 +245,7 @@ def route_humidites_get():
         json_return[row[0]] = { 'Capteur ID': row[1],
                                'Humidite': row[2],
                                'Date': row[3] }
-    return jsonify({'Liste des humidités': json_return})
+    return jsonify({'Liste des humidites': json_return})
 
 # Saturation
 @app.route('/saturations', methods=['POST'])
@@ -253,14 +253,14 @@ def route_saturations_post():
     capteur_id = request.form.get('capteur_id')
     mesure = request.form.get('sat')
     if (not representsInt(capteur_id)) or (not representsFloat(mesure)):
-        reponse = jsonify({'Erreur': "capteur_id ou sat n'ont pas la bonne représentation."})
+        reponse = jsonify({'Erreur': "capteur_id ou sat n'ont pas la bonne representation."})
     else:
         now = datetime.datetime.now()
         putSaturationToDB(capteur_id, mesure, now.strftime('%Y-%m-%d %H:%M:%S'), False)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['sat'] = mesure
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 # Saturation
@@ -304,7 +304,7 @@ def route_capteur_hum_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
     humidite = request.form.get('hum')
     if (not representsFloat(temperature)) or (not representsFloat(humidite)):
-        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation."})
+        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne representation."})
     else:
         now = datetime.datetime.now()
         putTemperatureToDB(str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'), test)
@@ -313,20 +313,20 @@ def route_capteur_hum_temp_post(capteur_id, test = True):
         valeurs_enr['capteur_id'] = str(capteur_id)
         valeurs_enr['temp'] = temperature
         valeurs_enr['hum'] = humidite
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 def route_capteur_gen_sat_post(capteur_id, test = True):
     mesure = request.form.get('sat')
     if not representsFloat(mesure):
-        reponse = jsonify({'Erreur': "sat n'a pas la bonne représentation."})
+        reponse = jsonify({'Erreur': "sat n'a pas la bonne representation."})
     else:
         now = datetime.datetime.now()
         putSaturationToDB(str(capteur_id), mesure, now.strftime('%Y-%m-%d %H:%M:%S'), test)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = str(capteur_id)
         valeurs_enr['sat'] = mesure
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 def route_capteur_hum_temp_get(capteur_id, test = True):
@@ -337,7 +337,7 @@ def route_capteur_hum_temp_get(capteur_id, test = True):
                                'Temperature': row[2],
                                'Humidite': row[3],
                                'Date': row[4] }
-    return jsonify({'Liste des températures et humidités': json_return})
+    return jsonify({'Liste des temperatures et humidites': json_return})
 
 
 def route_capteur_gen_sat_get(capteur_id, test = True):
@@ -361,14 +361,14 @@ def route_capteur_gen_temp_get(capteur_id, test = True):
 def route_capteur_gen_temp_post(capteur_id, test = True):
     temperature = request.form.get('temp')
     if (not representsInt(capteur_id)) or (not representsFloat(temperature)):
-        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne représentation"})
+        reponse = jsonify({'Erreur': "capteur_id ou temp n'ont pas la bonne representation"})
     else:
         now = datetime.datetime.now()
         putTemperatureToDB(str(capteur_id), temperature, now.strftime('%Y-%m-%d %H:%M:%S'), test)
         valeurs_enr = dict()
         valeurs_enr['capteur_id'] = capteur_id
         valeurs_enr['temp'] = temperature
-        reponse = jsonify({'Valeurs sauvegardées': valeurs_enr})
+        reponse = jsonify({'Valeurs sauvegardees': valeurs_enr})
     return reponse
 
 
