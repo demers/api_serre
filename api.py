@@ -4,7 +4,7 @@ import mysqldb
 from flask import *
 import datetime
 
-VERSION = 'Novembre 2022'
+VERSION = 'Fevrier 2023'
 
 def getDB():
     return mysqldb.MYSQLDB.getInstance()
@@ -98,7 +98,8 @@ def getTemperatureHumiditeFromDB(capteur, test = True):
     else:
         test_str = ''
     #query = "SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Temperature_id = Humidite.Humidite_id and Temperature.Capteur = " + str(capteur) + ";"
-    query = "SELECT Temperature" + test_str + ".Temperature_id, Temperature" + test_str + ".Capteur, Temperature" + test_str + ".Temp, Humidite" + test_str + ".Hum, Temperature" + test_str + ".Date_capteur FROM Temperature" + test_str + ", Humidite" + test_str + " WHERE Temperature" + test_str + ".Temperature_id = Humidite" + test_str + ".Humidite_id and Temperature" + test_str + ".Capteur = " + str(capteur) + ";"
+    # query = "SELECT Temperature" + test_str + ".Temperature_id, Temperature" + test_str + ".Capteur, Temperature" + test_str + ".Temp, Humidite" + test_str + ".Hum, Temperature" + test_str + ".Date_capteur FROM Temperature" + test_str + ", Humidite" + test_str + " WHERE Temperature" + test_str + ".Temperature_id = Humidite" + test_str + ".Humidite_id and Temperature" + test_str + ".Capteur = " + str(capteur) + ";"
+    query = "SELECT Temperature" + test_str + ".Temperature_id, Temperature" + test_str + ".Capteur, Temperature" + test_str + ".Temp, Humidite" + test_str + ".Hum, Temperature" + test_str + ".Date_capteur FROM Temperature" + test_str + ", Humidite" + test_str + " WHERE Temperature" + test_str + ".Date_capteur = Humidite" + test_str + ".Date_capteur and Temperature" + test_str + ".Capteur = " + str(capteur) + ";"
     return getDB().runSelectQuery(query)
 
 def getTemperatureSenseurFromDB(capteur_id, test = True):
@@ -390,13 +391,11 @@ def route_capteur2_get():
 
 @app.route('/capteur3', methods=['POST'])
 def route_capteur3_post():
-    #return route_capteur_gen_sat_post(3)
     return route_capteur_gen_temp_post(3, False)
     # return route_capteur_hum_temp_post(3, False)
 
 @app.route('/capteur3', methods=['GET'])
 def route_capteur3_get():
-    #return route_capteur_gen_sat_get(3)
     return route_capteur_gen_temp_get(3, False)
     # return route_capteur_hum_temp_get(3, False)
 
