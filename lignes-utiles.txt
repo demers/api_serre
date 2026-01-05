@@ -1,0 +1,56 @@
+# Lignes utiles API serre
+# ========== SQL ==========
+# Terminal SQL
+sudo mysql
+
+# Voir database sql
+mysql -u serre -p
+SHOW DATABASES;
+
+# Via phpMyAdmin
+http://localhost/phpmyadmin
+
+# Vérifier si mysql roule
+systemctl status mysql
+
+# Lancer mysql
+sudo systemctl start mysql
+
+# Kill mysql
+sudo systemctl stop mysql
+
+# Véfifier si apache2 roule
+systemctl status apache2
+
+# Lancer apache2
+sudo systemctl start apache2
+
+
+
+
+# ========== Python ==========
+# Créer environnement virtuel python
+python3 -m venv venv
+
+# Activer l'environnement virtuel python
+source venv/bin/activate
+
+# Installer dépendances dans venv
+pip install mysql-connector-python flask
+
+# Voir dépendances 
+pip list
+
+# Voir qui écoute sur le port
+sudo ss -lntp | grep mysql
+
+# Vérifier qui écoute le port 8080
+sudo lsof -i :8080
+
+# Kill flask
+kill 7961 7962 # Avec bon # PID
+
+# Voir logfile
+tail -f nohub.out
+
+

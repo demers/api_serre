@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Serre V4</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- Ruban titre -->
+    <header class="title-ribbon">
+        <h1>Daily Graph</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="{{ url_for('accueil') }}"
+        title="Accueil"
+        class="{% if active_page == 'accueil' %}active{% endif %}">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="{{ url_for('realtime') }}"
+        title="Real Time"
+        class="{% if active_page == 'realtime' %}active{% endif %}">
+            <i class="fa-solid fa-circle-info"></i>
+        </a>
+
+        <a href="{{ url_for('graph') }}"
+        title="Graphiques"
+        class="{% if active_page == 'graph' %}active{% endif %}">
+            <i class="fa-solid fa-chart-line"></i>
+        </a>
+
+        <a href="{{ url_for('controle') }}"
+        title="Contrôles"
+        class="{% if active_page == 'controle' %}active{% endif %}">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+    </nav>
+
+
+    <!-- Contenu principal -->
+
+    <div class="content-center">
+        <div class="graph-container">
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="{{ url_for('static', filename='graph.js') }}"></script>
+
+
+        
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>

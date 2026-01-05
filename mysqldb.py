@@ -7,7 +7,7 @@ import base64
 class MYSQLDB():
     __instance = None
 
-    ACCESS = 'amNkaTM3MjYK'
+    ACCESS = 'SmNkaTM3MjYh'
 
     @staticmethod
     def getInstance():
@@ -18,7 +18,7 @@ class MYSQLDB():
     def getConfig(self):
         config = {
             'user': 'serre',
-            'password': base64.b64decode(self.ACCESS).decode('UTF-8')[:-1],
+            'password': base64.b64decode(self.ACCESS).decode('UTF-8').strip(),
             'host': 'localhost',
             'port': '3306',
             'database':'serre'}
@@ -32,6 +32,8 @@ class MYSQLDB():
             #self.db = mysql.connector.connect(**getConfig())
 
     def runUpdateQuery(self, query):
+        conn = None
+        cursor = None
         try:
             conn = mysql.connector.connect(**self.getConfig())
             cursor = conn.cursor()

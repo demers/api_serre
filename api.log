@@ -1,0 +1,45 @@
+nohup: ignoring input
+ * Serving Flask app 'API pour la serre'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.99:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 383-564-008
+some exception occurred: 1045 (28000): Access denied for user 'serre'@'localhost' (using password: YES)
+127.0.0.1 - - [31/Dec/2025 11:52:36] "[35m[1mGET /initialize HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 189, in route_initialize
+    reponse = dbInitialize(True)
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 19, in dbInitialize
+    getDB().runUpdateQuery(query)
+  File "/home/server_test_linux/serre/api_serre/mysqldb.py", line 46, in runUpdateQuery
+    if conn.is_connected():
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_connected'
+ * Detected change in '/home/server_test_linux/serre/api_serre/mysqldb.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 383-564-008

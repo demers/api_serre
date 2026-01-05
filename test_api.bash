@@ -2,7 +2,7 @@
 
 echo "BD est vidé..."
 sleep 1
-http localhost:8080/initialize
+http localhost:8080/initialize_global
 sleep 1
 echo "La BD est vide..."
 http -f localhost:8080/temperatures

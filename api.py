@@ -183,6 +183,23 @@ def hello():
 def welcome():
 	return hello()
 
+@app.route('/accueil')
+def accueil():
+    return render_template("Page_Accueil.html", active_page="accueil")
+
+@app.route("/realtime")
+def realtime():
+    return render_template("Page_Real_Time.html", active_page="realtime")
+
+@app.route("/graph")
+def graph():
+    return render_template("Page_Graphiques.html", active_page="graph")
+
+@app.route("/controle")
+def controle():
+    return render_template("Page_Controle.html", active_page="controle")
+
+
 # TEST
 @app.route('/initialize')
 def route_initialize():

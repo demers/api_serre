@@ -1,0 +1,59 @@
+ * Serving Flask app 'API pour la serre'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.99:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 802-456-720
+10.0.0.99 - - [04/Jan/2026 19:55:01] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:01] "GET /static/images/accueil.jpg HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:03] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:03] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:04] "GET /realtime HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:05] "GET /graph HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:05] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:06] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:06] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:07] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:07] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:12] "GET / HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:12] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:18] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:18] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:20] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:20] "GET /realtime HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:21] "GET /graph HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:21] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:22] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:22] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:23] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [04/Jan/2026 19:55:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [04/Jan/2026 19:55:23] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 802-456-720
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 802-456-720
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 802-456-720

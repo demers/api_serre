@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Serre V4</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- Ruban titre -->
+    <header class="title-ribbon">
+        <h1>Real Time Sensors</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="{{ url_for('accueil') }}"
+        title="Accueil"
+        class="{% if active_page == 'accueil' %}active{% endif %}">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="{{ url_for('realtime') }}"
+        title="Real Time"
+        class="{% if active_page == 'realtime' %}active{% endif %}">
+            <i class="fa-solid fa-circle-info"></i>
+        </a>
+
+        <a href="{{ url_for('graph') }}"
+        title="Graphiques"
+        class="{% if active_page == 'graph' %}active{% endif %}">
+            <i class="fa-solid fa-chart-line"></i>
+        </a>
+
+        <a href="{{ url_for('controle') }}"
+        title="Contrôles"
+        class="{% if active_page == 'controle' %}active{% endif %}">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+    </nav>
+
+
+
+    <!-- Contenu principal -->
+
+    <div class="content-center">
+        <div class="table-container">
+            <table class="sensor-table">
+                <thead>
+                    <tr>
+                        <th>Capteur</th>
+                        <th>Valeur</th>
+                        <th>Dernière mise à jour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Température – Haut</td>
+                        <td id="sensor-temp-haut">-- °C</td>
+                        <td id="time-temp-haut">--</td>
+                    </tr>
+                    <tr>
+                        <td>Température – Bas</td>
+                        <td id="sensor-temp-bas">-- °C</td>
+                        <td id="time-temp-bas">--</td>
+                    </tr>
+                    <tr>
+                        <td>Température – Extérieur</td>
+                        <td id="sensor-temp-ext">-- °C</td>
+                        <td id="time-temp-ext">--</td>
+                    </tr>
+                    <tr>
+                        <td>Humidité</td>
+                        <td id="sensor-humidite">-- %</td>
+                        <td id="time-humidite">--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>
