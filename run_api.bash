@@ -9,10 +9,7 @@ source venv/bin/activate
 rm -f nohup.out.bak
 [ -f nohup.out ] && mv nohup.out nohup.bak
 
-# ⚠️ Éviter de tuer TOUS les python3 du système
-# killall python3   ❌ MAUVAIS
-
-# Option plus sûre : tuer seulement ton API
+# Kill api
 pkill -f "api.py"
 
 # Lancer l'API avec le python du venv

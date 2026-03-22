@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Serre V4</title>
 
     <!-- Font Awesome -->
@@ -9,6 +10,8 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -49,80 +52,82 @@
 
 
     <!-- Contenu principal -->
+     <main>
 
-    <div class="content-center">
-        <div class="control-grid">
+        <div class="content-center">
+            <div class="control-grid">
 
-            <!-- Rangée 1 -->
-            <div class="control-group mode">
-                <h2>Mode</h2>
-                <div class="btn-row">
-                    <button class="btn mode-btn btn-on active" data-mode="auto">Automatique</button>
-                    <button class="btn mode-btn btn-off" data-mode="manual">Manuel</button>
-                </div>
-            </div>
-
-            <!-- Rangée 2 -->
-            <div class="control-group porte">
-                <h2>Porte</h2>
-                <div class="btn-row">
-                    <button class="btn toggle-btn btn-on" data-group="porte">ON</button>
-                    <button class="btn toggle-btn btn-off active" data-group="porte">OFF</button>
-                </div>
-            </div>
-
-            <div class="control-group pompe">
-                <h2>Pompe</h2>
-                <div class="btn-row">
-                    <button class="btn toggle-btn btn-on" data-group="pompe">ON</button>
-                    <button class="btn toggle-btn btn-off active" data-group="pompe">OFF</button>
-                </div>
-            </div>
-
-            <!-- Rangée 3 -->
-            <div class="control-group fan">
-                <h2>Fan</h2>
-                <div class="btn-column">
-                    <button class="btn exclusive-btn btn-std" data-group="fan">Low</button>
-                    <button class="btn exclusive-btn btn-std" data-group="fan">Medium</button>
-                    <button class="btn exclusive-btn btn-std" data-group="fan">High</button>
-                    <button class="btn btn-off active exclusive-btn" data-group="fan">OFF</button>
-                </div>
-            </div>
-
-            <div class="control-group valves">
-                <h2>Valves</h2>
-                <div class="btn-column">
-                    <button class="btn exclusive-btn btn-std" data-group="valves">Valve 1</button>
-                    <button class="btn exclusive-btn btn-std" data-group="valves">Valve 2</button>
-                    <button class="btn exclusive-btn btn-std" data-group="valves">Valve 3</button>
-                    <button class="btn btn-off active exclusive-btn" data-group="valves">OFF</button>
-                </div>
-
-
-                <div class="slider-group">
-                    <input
-                        type="range"
-                        min="0"
-                        max="60"
-                        step="5"
-                        value="10"
-                        id="wateringTime"
-                    >
-
-                    <div class="slider-label">
-                        Temps d’arrosage :
-                        <span id="wateringValue">10</span> min
+                <!-- Rangée 1 -->
+                <div class="control-group mode">
+                    <h2>Mode</h2>
+                    <div class="btn-row">
+                        <button class="btn mode-btn btn-on active" data-mode="auto">Automatique</button>
+                        <button class="btn mode-btn btn-off" data-mode="manual">Manuel</button>
                     </div>
                 </div>
 
+                <!-- Rangée 2 -->
+                <div class="control-group porte">
+                    <h2>Porte</h2>
+                    <div class="btn-row">
+                        <button class="btn toggle-btn btn-on" data-group="porte">ON</button>
+                        <button class="btn toggle-btn btn-off active" data-group="porte">OFF</button>
+                    </div>
+                </div>
+
+                <div class="control-group pompe">
+                    <h2>Pompe</h2>
+                    <div class="btn-row">
+                        <button class="btn toggle-btn btn-on" data-group="pompe">ON</button>
+                        <button class="btn toggle-btn btn-off active" data-group="pompe">OFF</button>
+                    </div>
+                </div>
+
+                <!-- Rangée 3 -->
+                <div class="control-group fan">
+                    <h2>Fan</h2>
+                    <div class="btn-column">
+                        <button class="btn exclusive-btn btn-std" data-group="fan">Low</button>
+                        <button class="btn exclusive-btn btn-std" data-group="fan">Medium</button>
+                        <button class="btn exclusive-btn btn-std" data-group="fan">High</button>
+                        <button class="btn btn-off active exclusive-btn" data-group="fan">OFF</button>
+                    </div>
+                </div>
+
+                <div class="control-group valves">
+                    <h2>Valves</h2>
+                    <div class="btn-column">
+                        <button class="btn exclusive-btn btn-std" data-group="valves">Valve 1</button>
+                        <button class="btn exclusive-btn btn-std" data-group="valves">Valve 2</button>
+                        <button class="btn exclusive-btn btn-std" data-group="valves">Valve 3</button>
+                        <button class="btn btn-off active exclusive-btn" data-group="valves">OFF</button>
+                    </div>
+
+
+                    <div class="slider-group">
+                        <input
+                            type="range"
+                            min="0"
+                            max="60"
+                            step="5"
+                            value="10"
+                            id="wateringTime"
+                        >
+
+                        <div class="slider-label">
+                            Temps d’arrosage :
+                            <span id="wateringValue">10</span> min
+                        </div>
+                    </div>
+
+
+                </div>
 
             </div>
 
+
         </div>
-
-
-    </div>
+    </main>
     
 
 </div>

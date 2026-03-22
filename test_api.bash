@@ -8,6 +8,7 @@ echo "La BD est vide..."
 http -f localhost:8080/temperatures
 http -f localhost:8080/humidites
 http -f localhost:8080/saturations
+http -f localhost:8080/etatsSysteme
 
 sleep 1
 echo "La température du capteur 45 est à 32.2..."
@@ -62,4 +63,3 @@ sleep 1
 echo "Les valeurs sont bien dans la BD Mysql..."
 echo Requête: http -f localhost:8080/saturations
 http -f localhost:8080/saturations
-

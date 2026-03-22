@@ -1,28 +1,74 @@
+/* ================================================
+   CONFIGURATION – Remplace les IPs et endpoints ici
+================================================ */
+const DEVICES = {
+    porte: {
+        ip: "10.0.0.239",
+        actions: {
+            on:  "/PORTE=ON",
+            off: "/PORTE=OFF",
+        }
+    },
+    pompe: {
+        ip: "10.0.0.239",
+        actions: {
+            on:  "/POMPE=ON",
+            off: "/POMPE=OFF",
+        }
+    },
+    fan: {
+        ip: "10.0.0.129",
+        actions: {
+            low:    "/power?level=1",
+            medium: "/power?level=2",
+            high:   "/power?level=3",
+            off:    "/power?level=0",
+        }
+    },
+    valves: {
+        ip: "10.0.0.13",
+        actions: {
+            "valve 1": "/VALVE1=ON",
+            "valve 2": "/VALVE2=ON",
+            "valve 3": "/VALVE3=ON",
+            off:       "/VALVES=OFF",
+        }
+    },
+};
+
+/* ================================================
+   UTILITAIRE – Envoie une requête GET au module
+================================================ */
+function sendRequest(ip, endpoint) {
+    const url = `http://${ip}${endpoint}`;
+    console.log("GET →", url);
+    fetch(url).catch(err => console.error(`Erreur [${url}] :`, err));
+}
+
+/* ================================================
+   INITIALISATION
+================================================ */
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =========================
-       SLIDER – affichage valeur
-    ========================= */
-    const slider = document.getElementById("wateringTime");
+    /* ── Slider – affichage valeur ── */
+    const slider    = document.getElementById("wateringTime");
     const valueSpan = document.getElementById("wateringValue");
-
     if (slider && valueSpan) {
         valueSpan.textContent = slider.value;
-        slider.addEventListener("input", () => {valueSpan.textContent = slider.value;});
+        slider.addEventListener("input", () => {
+            valueSpan.textContent = slider.value;
+        });
     }
 
-    /* =========================
-       MODE AUTO / MANUEL
-    ========================= */
-    const modeButtons = document.querySelectorAll(".mode-btn");
+    /* ── Mode AUTO / MANUEL ── */
+    const modeButtons    = document.querySelectorAll(".mode-btn");
     const manualControls = document.querySelectorAll(
         ".toggle-btn, .exclusive-btn, input[type='range']"
     );
 
     function applyModeState() {
-        const autoBtn = document.querySelector(".mode-btn.active");
-        const isAuto = autoBtn && autoBtn.dataset.mode === "auto";
-
+        const activeBtn = document.querySelector(".mode-btn.active");
+        const isAuto    = activeBtn?.dataset.mode === "auto";
         manualControls.forEach(ctrl => {
             ctrl.classList.toggle("disabled", isAuto);
             ctrl.disabled = isAuto;
@@ -37,47 +83,53 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // ✅ Appliquer l’état AUTO dès le chargement
-    applyModeState();
+    applyModeState(); // Appliquer l'état AUTO au chargement
 
-    /* =========================
-       ON / OFF (porte, pompe)
-    ========================= */
-    const toggleButtons = document.querySelectorAll(".toggle-btn");
-
-    toggleButtons.forEach(btn => {
+    /* ── ON / OFF (porte, pompe) ── */
+    document.querySelectorAll(".toggle-btn").forEach(btn => {
         btn.addEventListener("click", () => {
             if (btn.classList.contains("disabled")) return;
 
-            const group = btn.dataset.group;
-            document
-                .querySelectorAll(`.toggle-btn[data-group="${group}"]`)
-                .forEach(b => b.classList.remove("active"));
+            const group   = btn.dataset.group;
+            const actionKey = btn.classList.contains("btn-on") ? "on" : "off";
+            const device  = DEVICES[group];
 
+            // Mise à jour visuelle
+            document.querySelectorAll(`.toggle-btn[data-group="${group}"]`)
+                .forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
+
+            // Envoi requête
+            if (device) sendRequest(device.ip, device.actions[actionKey]);
         });
     });
 
-    /* =========================
-       GROUPES EXCLUSIFS
-       (fan, valves)
-    ========================= */
-    const exclusiveButtons = document.querySelectorAll(".exclusive-btn");
-
-    exclusiveButtons.forEach(btn => {
+    /* ── Groupes exclusifs (fan, valves) ── */
+    document.querySelectorAll(".exclusive-btn").forEach(btn => {
         btn.addEventListener("click", () => {
             if (btn.classList.contains("disabled")) return;
 
-            const group = btn.dataset.group;
+            const group     = btn.dataset.group;
+            const label     = btn.textContent.trim().toLowerCase();
+            const device    = DEVICES[group];
+            const actionKey = device?.actions[label] ? label : "off";
 
-            // Nettoyage AVANT activation
-            document
-                .querySelectorAll(`.exclusive-btn[data-group="${group}"]`)
+            // Mise à jour visuelle
+            document.querySelectorAll(`.exclusive-btn[data-group="${group}"]`)
                 .forEach(b => b.classList.remove("active"));
-
-            // Activer UNIQUEMENT le bouton cliqué
             btn.classList.add("active");
+
+            // Envoi requête + temps d'arrosage pour les valves
+            if (device) {
+                let endpoint = device.actions[actionKey];
+                if (group === "valves" && actionKey !== "off" && slider) {
+                    endpoint += `&duration=${slider.value}`;
+                }
+                sendRequest(device.ip, endpoint);
+            }
         });
     });
 
 });
+
+

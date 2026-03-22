@@ -1,4 +1,9 @@
 # Lignes utiles API serre
+
+# Lancer API
+./run_api.bash
+
+
 # ========== SQL ==========
 # Terminal SQL
 sudo mysql

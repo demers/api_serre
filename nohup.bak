@@ -7,53 +7,1926 @@
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 802-456-720
-10.0.0.99 - - [04/Jan/2026 19:55:01] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:01] "GET /static/images/accueil.jpg HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:03] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:03] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:04] "GET /realtime HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:05] "GET /graph HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:05] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:06] "GET /controle HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:06] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:07] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:07] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:12] "GET / HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:12] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:18] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:18] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:20] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:20] "GET /realtime HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:21] "GET /graph HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:21] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:22] "GET /controle HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:22] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:23] "GET /accueil HTTP/1.1" 200 -
-10.0.0.99 - - [04/Jan/2026 19:55:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-10.0.0.99 - - [04/Jan/2026 19:55:23] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+ * Debugger PIN: 710-095-007
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-21 11:20:37');
+127.0.0.1 - - [21/Mar/2026 11:20:37] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-21 12:47:48');
+127.0.0.1 - - [21/Mar/2026 12:47:48] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan2', 1, '2026-03-21 12:47:49');
+127.0.0.1 - - [21/Mar/2026 12:47:49] "POST /fan2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('porte', 1, '2026-03-21 12:47:51');
+127.0.0.1 - - [21/Mar/2026 12:47:51] "POST /porte HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('pompe', 1, '2026-03-21 12:47:52');
+127.0.0.1 - - [21/Mar/2026 12:47:52] "POST /pompe HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve1', 1, '2026-03-21 12:47:54');
+127.0.0.1 - - [21/Mar/2026 12:47:54] "POST /valve1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve2', 1, '2026-03-21 12:47:55');
+127.0.0.1 - - [21/Mar/2026 12:47:55] "POST /valve2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve3', 1, '2026-03-21 12:47:56');
+127.0.0.1 - - [21/Mar/2026 12:47:56] "POST /valve3 HTTP/1.1" 200 -
+127.0.0.1 - - [21/Mar/2026 12:47:58] "[33mGET /etatsSyteme HTTP/1.1[0m" 404 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-21 12:48:48');
+127.0.0.1 - - [21/Mar/2026 12:48:48] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan2', 1, '2026-03-21 12:48:49');
+127.0.0.1 - - [21/Mar/2026 12:48:49] "POST /fan2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('porte', 1, '2026-03-21 12:48:50');
+127.0.0.1 - - [21/Mar/2026 12:48:50] "POST /porte HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('pompe', 1, '2026-03-21 12:48:52');
+127.0.0.1 - - [21/Mar/2026 12:48:52] "POST /pompe HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve1', 1, '2026-03-21 12:48:53');
+127.0.0.1 - - [21/Mar/2026 12:48:53] "POST /valve1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve2', 1, '2026-03-21 12:48:54');
+127.0.0.1 - - [21/Mar/2026 12:48:55] "POST /valve2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve3', 1, '2026-03-21 12:48:56');
+127.0.0.1 - - [21/Mar/2026 12:48:56] "POST /valve3 HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [21/Mar/2026 12:48:57] "GET /etatsSysteme HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+10.0.0.99 - - [21/Mar/2026 12:51:06] "GET /etatsSysteme HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 12:51:06] code 400, message Bad request version ('\x9c7Ì(\x87°Ø\x10;äO\x8b«\x03I\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+10.0.0.99 - - [21/Mar/2026 12:51:06] "[31m[1m\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x11¦R¤i":p\x0fï²rt\x1c\x85\x8c\x0e\x8f\x9b\x95\\_)(8+©k< XF k\x11c\x07p\x92Ì<K:ì^Òîsÿ\x0d\x9c7Ì(\x87°Ø\x10;äO\x8b«\x03I\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" 400 -
+10.0.0.99 - - [21/Mar/2026 12:51:06] code 400, message Bad request version ('`t¾k\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+10.0.0.99 - - [21/Mar/2026 12:51:06] "[31m[1m\x16\x03\x01\x02~\x01\x00\x02z\x03\x034?Õ7,\x80\x1c3Þ¦¿úhZ°¦ï\x8f"µlb\x99\x85\x84\x05ú1B\x14J­ \x8eÍ¢Ù\x05\x85¡Ô²X\x17\x11yÓ\x83)\x18§É~êLåjîóí\x1e`t¾k\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" 400 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-21 12:58:25');
+127.0.0.1 - - [21/Mar/2026 12:58:25] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan2', 1, '2026-03-21 12:58:27');
+127.0.0.1 - - [21/Mar/2026 12:58:27] "POST /fan2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('porte', 1, '2026-03-21 12:58:28');
+127.0.0.1 - - [21/Mar/2026 12:58:28] "POST /porte HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('pompe', 1, '2026-03-21 12:58:29');
+127.0.0.1 - - [21/Mar/2026 12:58:29] "POST /pompe HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve1', 1, '2026-03-21 12:58:31');
+127.0.0.1 - - [21/Mar/2026 12:58:31] "POST /valve1 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve2', 1, '2026-03-21 12:58:32');
+127.0.0.1 - - [21/Mar/2026 12:58:32] "POST /valve2 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('valve3', 1, '2026-03-21 12:58:33');
+127.0.0.1 - - [21/Mar/2026 12:58:33] "POST /valve3 HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [21/Mar/2026 12:58:35] "GET /etatsSysteme HTTP/1.1" 200 -
+SELECT * FROM Systemes WHERE Systeme = fan1;
+some exception occurred: 1054 (42S22): Unknown column 'fan1' in 'where clause'
+127.0.0.1 - - [21/Mar/2026 12:58:36] "GET /fan1 HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:08:43] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:08:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:08:43] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:09:16] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:09:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:09:16] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:23] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:11:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:23] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:25] "GET /realtime HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:11:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:30] "GET /graph HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:11:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:30] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:58] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 14:11:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 14:11:58] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:55:09] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:55:10] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:55:10] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 15:55:36] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 15:55:37] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 15:55:37] "GET /static/images/accueil.jpg HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 15:55:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [21/Mar/2026 15:55:38] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 15:55:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 15:55:38] "GET /static/controls.js HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:56:41] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:56:41] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:56:41] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:56:53] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:56:53] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:56:53] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:21] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:57:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:21] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:23] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:57:23] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:52] "GET /accueil HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:57:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:52] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:54] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:57:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:57:54] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:59:27] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:59:27] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:59:27] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 15:59:36] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:59:36] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 15:59:36] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:04:56] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:04:56] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:04:56] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:08:27] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:08:27] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:08:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:11:21] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:11:21] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:11:21] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:11:35] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:11:35] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:11:35] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:11:40] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:11:40] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:11:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:13:26] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:13:26] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:13:26] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:13:28] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:13:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:13:28] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:14:59] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:14:59] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:14:59] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:15:02] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:15:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:15:02] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:15:23] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:15:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:15:23] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:15:27] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:15:27] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:15:27] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:17:08] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:17:08] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:17:08] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:20:57] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:20:57] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:20:57] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:21:20] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:21:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:21:20] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:24:34] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:24:34] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:24:34] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:25:39] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:25:39] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:25:39] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:27:22] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:27:22] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:27:22] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:27:28] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:27:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:27:28] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:28:46] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:28:46] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:28:46] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:31:00] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:31:00] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:31:00] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:36:39] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:36:39] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:36:39] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:36:44] "GET /controle HTTP/1.1" 200 -
+10.0.0.99 - - [21/Mar/2026 16:36:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.99 - - [21/Mar/2026 16:36:44] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:36:53] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:36:54] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:36:54] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:25] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:25] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:27] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:29] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:29] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:30] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:30] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:32] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:32] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:33] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:35] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:35] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:38] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:40] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:40] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:41] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:41] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:44] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 16:38:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 16:38:44] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [21/Mar/2026 17:42:28] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:28] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:30] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:31] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:32] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:32] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:39] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:39] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:42] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:42] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:44] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:45] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:45] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:46] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:46] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:50] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 17:42:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 17:42:50] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [21/Mar/2026 19:23:26] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 19:23:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:26] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:31] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 19:23:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:34] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 19:23:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:34] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:37] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [21/Mar/2026 19:23:37] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [21/Mar/2026 19:23:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:26:10] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:26:10] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:26:10] "GET /static/images/accueil.jpg HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:26:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.246 - - [22/Mar/2026 06:32:17] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:32:17] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:32:17] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:08] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:08] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:08] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:11] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:12] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:12] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:14] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:14] "GET /static/controls.js HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:25] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:25] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:29] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:31] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:31] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:32] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:32] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:33] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:38:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:38:33] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:39:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:42:24] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:42:24] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:42:24] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:47:22] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:47:23] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:47:23] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:48:29] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:48:29] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:48:29] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:51:28] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:51:28] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:51:28] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 06:56:00] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:56:00] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 06:56:00] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:01:14] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:01:14] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:01:14] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:01:21] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:01:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:01:29] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:01:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:01:29] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:03:24] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:03:24] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:03:24] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:06:41] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:06:41] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:06:41] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:08:53] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:08:53] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:08:53] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:15:20] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:15:20] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:15:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:26:58] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:26:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:26:58] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:31:47] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:31:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:31:47] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:33:03] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:33:03] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:33:03] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:42:06] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:42:06] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:42:06] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:45:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:46:42] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:46:42] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:46:42] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:46:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 07:46:46] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:46:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:46:46] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:47:12] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:47:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:47:12] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:47] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:47] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:47] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:50] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:51] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:51] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:52] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:52] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:55] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:48:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:48:55] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 07:49:02] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 07:49:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:54:38] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:54:38] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:54:38] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:56:15] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:56:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:56:17] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:56:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:56:17] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:57:20] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:57:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:57:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:57:52] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:57:52] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:57:52] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:58:34] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 07:58:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:58:34] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 07:58:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:06:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:21:17] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:21:17] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:21:17] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:25:20] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:25:20] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:25:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:29:36] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:29:36] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:29:36] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:29:47] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:29:47] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:29:48] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:29:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:29:48] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:04] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:06] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:06] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:12] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:12] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:12] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:13] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:13] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:14] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:14] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:16] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:30:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:30:16] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:31:54] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:31:54] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:31:54] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:32:04] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:32:04] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:32:04] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:04] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:04] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:37] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:37] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:38] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:40] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:41] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:44] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:44] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:46] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:35:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:35:46] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:40:16] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:40:16] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:40:16] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:41:19] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:41:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:41:32] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:41:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:41:32] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:42:02] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:42:02] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:42:02] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:42:29] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:42:29] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:42:29] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:43:57] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:43:57] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:43:57] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:45:26] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:45:26] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:45:26] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:46:55] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:46:55] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:46:55] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:48:57] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:48:57] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:48:57] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:49:39] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:49:39] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:49:39] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:49:53] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:49:53] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:49:53] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:49:57] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:49:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:50:00] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 08:50:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 08:50:00] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:50:58] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:50:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:50:59] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:51:01] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:51:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 08:55:03] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:55:03] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:58:08] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 08:58:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:02:07] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:02:07] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:05:51] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:05:52] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:08:19] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:08:19] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:08:24] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:08:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:08:24] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:08:26] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:08:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:10:03] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:10:04] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:10:11] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:10:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:10:11] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:10:14] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:10:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:10:42] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:10:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 09:17:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 09:17:13] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 09:17:13] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 09:17:19] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 09:17:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 09:17:19] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:23:24] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:23:24] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:23:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:24:19] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:24:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:24:19] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:24:54] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:24:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:24:54] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:26:26] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:26:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:26:26] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:28:17] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:28:17] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:28:17] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:31:14] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:31:14] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:31:14] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:33:47] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:33:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:33:47] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:35:06] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:35:06] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:35:06] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:35:34] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:35:34] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:35:34] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:36:22] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:36:22] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:36:22] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:37:04] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:37:04] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:37:04] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:37:59] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:37:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:37:59] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:41:01] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:41:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:41:01] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:24] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:25] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:25] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:43:29] "GET /accueil HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:43:29] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:43:30] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:43:36] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:43:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:43:36] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:44:26] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:44:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:44:28] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:44:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:44:28] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:44:30] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:44:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:47:37] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:47:37] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:49:32] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:49:32] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:53:06] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:53:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:53:06] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:54:15] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:54:15] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:54:15] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:31] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:31] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:31] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:55:40] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:55:40] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:55:56] "GET /realtime HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:55:57] "GET /graph HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:55:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:55:57] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:56:11] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:56:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:56:11] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:57:37] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 09:57:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 09:57:37] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:11:55] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:11:55] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:11:55] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:18:29] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:18:30] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:18:30] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:20:20] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:20:20] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:20:20] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:21:48] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:21:48] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:21:48] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:24:27] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:24:27] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:24:27] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:24:50] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:24:50] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:24:50] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:26:22] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:26:22] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:26:22] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:30:26] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:30:26] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:30:26] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:32:40] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:32:40] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:32:40] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:34:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 10:34:17] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:34:17] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:34:17] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:36:59] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:36:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:36:59] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:01] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:37:01] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:19] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:37:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:19] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:24] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:37:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:37:24] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:38:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 10:42:15] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:16] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:19] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:21] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:21] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:23] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:23] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:28] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:42:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:42:28] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:00] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:43:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:00] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 10:43:03] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:43:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:03] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:06] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:43:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:43:06] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:10] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:44:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:10] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:13] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:44:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:13] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:44:23] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 10:44:23] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 10:44:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:40] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:44:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:42] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:44:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:42] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:46] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:44:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:44:47] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:45:10] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:45:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:45:10] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:02] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:02] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:02] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:05] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:05] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:07] "GET /graph HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:07] "[36mGET /static/graph.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:09] "GET /realtime HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:13] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:13] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:15] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:48:15] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.243 - - [22/Mar/2026 10:49:02] "[33mGET /acceuil HTTP/1.1[0m" 404 -
+10.0.0.243 - - [22/Mar/2026 10:49:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.133 - - [22/Mar/2026 10:49:09] "GET /controle HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:49:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:49:09] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:49:10] "GET /accueil HTTP/1.1" 200 -
+10.0.0.133 - - [22/Mar/2026 10:49:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.133 - - [22/Mar/2026 10:49:10] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.243 - - [22/Mar/2026 10:49:11] "[33mGET /acceuil HTTP/1.1[0m" 404 -
+10.0.0.243 - - [22/Mar/2026 10:49:31] "GET /accueil HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:31] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:31] "GET /static/images/accueil.jpg HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.243 - - [22/Mar/2026 10:49:35] "GET /realtime HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.243 - - [22/Mar/2026 10:49:37] "GET /graph HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.243 - - [22/Mar/2026 10:49:37] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:39] "GET /controle HTTP/1.1" 200 -
+10.0.0.243 - - [22/Mar/2026 10:49:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.243 - - [22/Mar/2026 10:49:39] "GET /static/controls.js HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:01] "GET /accueil HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:01] "GET /static/style.css HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:01] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.0.0.170 - - [22/Mar/2026 10:52:04] "GET /realtime HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:07] "GET /graph HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:07] "GET /static/graph.js HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:15] "GET /controle HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:15] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:20] "GET /accueil HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:20] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:21] "GET /realtime HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:23] "GET /accueil HTTP/1.1" 200 -
+10.0.0.170 - - [22/Mar/2026 10:52:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10.0.0.170 - - [22/Mar/2026 10:52:23] "[36mGET /static/images/accueil.jpg HTTP/1.1[0m" 304 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:06:01] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 1;
+SELECT * FROM Temperature WHERE Capteur = 2 ORDER BY Temperature_id DESC LIMIT 1;
+SELECT * FROM Temperature WHERE Capteur = 3 ORDER BY Temperature_id DESC LIMIT 1;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 1;
+SELECT * FROM Humidite WHERE Capteur = 2 ORDER BY Humidite_id DESC LIMIT 1;
+127.0.0.1 - - [22/Mar/2026 11:09:21] "[35m[1mGET /moniteur HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 431, in route_capteur1_capteur2_capteur3_get
+    json_return[3] = {  'Capteur ID': reponse_temp_capteur3[1],
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+10.0.0.246 - - [22/Mar/2026 11:19:12] "GET /controle HTTP/1.1" 200 -
+10.0.0.246 - - [22/Mar/2026 11:19:12] "[36mGET /static/controls.js HTTP/1.1[0m" 304 -
+10.0.0.246 - - [22/Mar/2026 11:19:12] "GET /static/style.css HTTP/1.1" 200 -
  * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 802-456-720
+ * Debugger PIN: 710-095-007
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:38:03] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:38:04] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 11:38:05] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 11:38:05] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 11:38:05] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 11:38:07');
+127.0.0.1 - - [22/Mar/2026 11:38:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 1, '2026-03-22 11:38:07');
+127.0.0.1 - - [22/Mar/2026 11:38:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 2, '2026-03-22 11:38:08');
+127.0.0.1 - - [22/Mar/2026 11:38:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 3, '2026-03-22 11:38:08');
+127.0.0.1 - - [22/Mar/2026 11:38:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 4, '2026-03-22 11:38:08');
+127.0.0.1 - - [22/Mar/2026 11:38:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 5, '2026-03-22 11:38:09');
+127.0.0.1 - - [22/Mar/2026 11:38:09] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 6, '2026-03-22 11:38:09');
+127.0.0.1 - - [22/Mar/2026 11:38:09] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 7, '2026-03-22 11:38:10');
+127.0.0.1 - - [22/Mar/2026 11:38:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 8, '2026-03-22 11:38:10');
+127.0.0.1 - - [22/Mar/2026 11:38:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 9, '2026-03-22 11:38:11');
+127.0.0.1 - - [22/Mar/2026 11:38:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 10, '2026-03-22 11:38:11');
+127.0.0.1 - - [22/Mar/2026 11:38:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 11, '2026-03-22 11:38:12');
+127.0.0.1 - - [22/Mar/2026 11:38:12] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 12, '2026-03-22 11:38:12');
+127.0.0.1 - - [22/Mar/2026 11:38:12] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 13, '2026-03-22 11:38:13');
+127.0.0.1 - - [22/Mar/2026 11:38:13] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 14, '2026-03-22 11:38:13');
+127.0.0.1 - - [22/Mar/2026 11:38:13] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 15, '2026-03-22 11:38:13');
+127.0.0.1 - - [22/Mar/2026 11:38:13] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 16, '2026-03-22 11:38:14');
+127.0.0.1 - - [22/Mar/2026 11:38:14] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 17, '2026-03-22 11:38:14');
+127.0.0.1 - - [22/Mar/2026 11:38:14] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 18, '2026-03-22 11:38:15');
+127.0.0.1 - - [22/Mar/2026 11:38:15] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 19, '2026-03-22 11:38:15');
+127.0.0.1 - - [22/Mar/2026 11:38:15] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 20, '2026-03-22 11:38:16');
+127.0.0.1 - - [22/Mar/2026 11:38:16] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 21, '2026-03-22 11:38:16');
+127.0.0.1 - - [22/Mar/2026 11:38:16] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 22, '2026-03-22 11:38:17');
+127.0.0.1 - - [22/Mar/2026 11:38:17] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 23, '2026-03-22 11:38:17');
+127.0.0.1 - - [22/Mar/2026 11:38:17] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 24, '2026-03-22 11:38:17');
+127.0.0.1 - - [22/Mar/2026 11:38:18] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 25, '2026-03-22 11:38:18');
+127.0.0.1 - - [22/Mar/2026 11:38:18] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 26, '2026-03-22 11:38:18');
+127.0.0.1 - - [22/Mar/2026 11:38:18] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 27, '2026-03-22 11:38:19');
+127.0.0.1 - - [22/Mar/2026 11:38:19] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 28, '2026-03-22 11:38:19');
+127.0.0.1 - - [22/Mar/2026 11:38:19] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 29, '2026-03-22 11:38:20');
+127.0.0.1 - - [22/Mar/2026 11:38:20] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 30, '2026-03-22 11:38:20');
+127.0.0.1 - - [22/Mar/2026 11:38:20] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 31, '2026-03-22 11:38:21');
+127.0.0.1 - - [22/Mar/2026 11:38:21] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 32, '2026-03-22 11:38:21');
+127.0.0.1 - - [22/Mar/2026 11:38:21] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 33, '2026-03-22 11:38:22');
+127.0.0.1 - - [22/Mar/2026 11:38:22] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 34, '2026-03-22 11:38:22');
+127.0.0.1 - - [22/Mar/2026 11:38:22] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 35, '2026-03-22 11:38:22');
+127.0.0.1 - - [22/Mar/2026 11:38:23] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 36, '2026-03-22 11:38:23');
+127.0.0.1 - - [22/Mar/2026 11:38:23] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 37, '2026-03-22 11:38:23');
+127.0.0.1 - - [22/Mar/2026 11:38:23] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 38, '2026-03-22 11:38:24');
+127.0.0.1 - - [22/Mar/2026 11:38:24] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 39, '2026-03-22 11:38:24');
+127.0.0.1 - - [22/Mar/2026 11:38:24] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 40, '2026-03-22 11:38:25');
+127.0.0.1 - - [22/Mar/2026 11:38:25] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 41, '2026-03-22 11:38:25');
+127.0.0.1 - - [22/Mar/2026 11:38:25] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 42, '2026-03-22 11:38:26');
+127.0.0.1 - - [22/Mar/2026 11:38:26] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 43, '2026-03-22 11:38:26');
+127.0.0.1 - - [22/Mar/2026 11:38:26] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 44, '2026-03-22 11:38:27');
+127.0.0.1 - - [22/Mar/2026 11:38:27] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 45, '2026-03-22 11:38:27');
+127.0.0.1 - - [22/Mar/2026 11:38:27] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 46, '2026-03-22 11:38:27');
+127.0.0.1 - - [22/Mar/2026 11:38:27] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 47, '2026-03-22 11:38:28');
+127.0.0.1 - - [22/Mar/2026 11:38:28] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 48, '2026-03-22 11:38:28');
+127.0.0.1 - - [22/Mar/2026 11:38:28] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 49, '2026-03-22 11:38:29');
+127.0.0.1 - - [22/Mar/2026 11:38:29] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 50, '2026-03-22 11:38:29');
+127.0.0.1 - - [22/Mar/2026 11:38:29] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 51, '2026-03-22 11:38:30');
+127.0.0.1 - - [22/Mar/2026 11:38:30] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 52, '2026-03-22 11:38:30');
+127.0.0.1 - - [22/Mar/2026 11:38:30] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 53, '2026-03-22 11:38:31');
+127.0.0.1 - - [22/Mar/2026 11:38:31] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 54, '2026-03-22 11:38:31');
+127.0.0.1 - - [22/Mar/2026 11:38:31] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 55, '2026-03-22 11:38:32');
+127.0.0.1 - - [22/Mar/2026 11:38:32] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 56, '2026-03-22 11:38:32');
+127.0.0.1 - - [22/Mar/2026 11:38:32] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 57, '2026-03-22 11:38:32');
+127.0.0.1 - - [22/Mar/2026 11:38:32] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 58, '2026-03-22 11:38:33');
+127.0.0.1 - - [22/Mar/2026 11:38:33] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 59, '2026-03-22 11:38:33');
+127.0.0.1 - - [22/Mar/2026 11:38:33] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 60, '2026-03-22 11:38:34');
+127.0.0.1 - - [22/Mar/2026 11:38:34] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 61, '2026-03-22 11:38:34');
+127.0.0.1 - - [22/Mar/2026 11:38:34] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 62, '2026-03-22 11:38:35');
+127.0.0.1 - - [22/Mar/2026 11:38:35] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 63, '2026-03-22 11:38:35');
+127.0.0.1 - - [22/Mar/2026 11:38:35] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 64, '2026-03-22 11:38:36');
+127.0.0.1 - - [22/Mar/2026 11:38:36] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 65, '2026-03-22 11:38:36');
+127.0.0.1 - - [22/Mar/2026 11:38:36] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 66, '2026-03-22 11:38:37');
+127.0.0.1 - - [22/Mar/2026 11:38:37] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 67, '2026-03-22 11:38:37');
+127.0.0.1 - - [22/Mar/2026 11:38:37] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 68, '2026-03-22 11:38:37');
+127.0.0.1 - - [22/Mar/2026 11:38:37] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 69, '2026-03-22 11:38:38');
+127.0.0.1 - - [22/Mar/2026 11:38:38] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 70, '2026-03-22 11:38:38');
+127.0.0.1 - - [22/Mar/2026 11:38:38] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 71, '2026-03-22 11:38:39');
+127.0.0.1 - - [22/Mar/2026 11:38:39] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 72, '2026-03-22 11:38:39');
+127.0.0.1 - - [22/Mar/2026 11:38:39] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 73, '2026-03-22 11:38:40');
+127.0.0.1 - - [22/Mar/2026 11:38:40] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 74, '2026-03-22 11:38:40');
+127.0.0.1 - - [22/Mar/2026 11:38:40] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 75, '2026-03-22 11:38:41');
+127.0.0.1 - - [22/Mar/2026 11:38:41] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 76, '2026-03-22 11:38:41');
+127.0.0.1 - - [22/Mar/2026 11:38:41] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 77, '2026-03-22 11:38:41');
+127.0.0.1 - - [22/Mar/2026 11:38:42] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 78, '2026-03-22 11:38:42');
+127.0.0.1 - - [22/Mar/2026 11:38:42] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 79, '2026-03-22 11:38:42');
+127.0.0.1 - - [22/Mar/2026 11:38:42] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 80, '2026-03-22 11:38:43');
+127.0.0.1 - - [22/Mar/2026 11:38:43] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 81, '2026-03-22 11:38:43');
+127.0.0.1 - - [22/Mar/2026 11:38:43] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 82, '2026-03-22 11:38:44');
+127.0.0.1 - - [22/Mar/2026 11:38:44] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 83, '2026-03-22 11:38:44');
+127.0.0.1 - - [22/Mar/2026 11:38:44] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 84, '2026-03-22 11:38:45');
+127.0.0.1 - - [22/Mar/2026 11:38:45] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 85, '2026-03-22 11:38:45');
+127.0.0.1 - - [22/Mar/2026 11:38:45] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 86, '2026-03-22 11:38:46');
+127.0.0.1 - - [22/Mar/2026 11:38:46] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 87, '2026-03-22 11:38:46');
+127.0.0.1 - - [22/Mar/2026 11:38:46] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 88, '2026-03-22 11:38:46');
+127.0.0.1 - - [22/Mar/2026 11:38:47] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 89, '2026-03-22 11:38:47');
+127.0.0.1 - - [22/Mar/2026 11:38:47] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 90, '2026-03-22 11:38:47');
+127.0.0.1 - - [22/Mar/2026 11:38:47] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 91, '2026-03-22 11:38:48');
+127.0.0.1 - - [22/Mar/2026 11:38:48] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 92, '2026-03-22 11:38:48');
+127.0.0.1 - - [22/Mar/2026 11:38:48] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 93, '2026-03-22 11:38:49');
+127.0.0.1 - - [22/Mar/2026 11:38:49] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 94, '2026-03-22 11:38:49');
+127.0.0.1 - - [22/Mar/2026 11:38:49] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 95, '2026-03-22 11:38:50');
+127.0.0.1 - - [22/Mar/2026 11:38:50] "POST /temperatures HTTP/1.1" 200 -
+SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Date_capteur = Humidite.Date_capteur AND Temperature.Capteur = 1 AND Humidite.Capteur = 1;
+127.0.0.1 - - [22/Mar/2026 11:38:51] "GET /capteur1 HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:42:46] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:42:47] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 11:42:48] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 11:42:48] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 11:42:48] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 11:42:50');
+127.0.0.1 - - [22/Mar/2026 11:42:50] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 1, '2026-03-22 11:42:50');
+127.0.0.1 - - [22/Mar/2026 11:42:50] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 2, '2026-03-22 11:42:51');
+127.0.0.1 - - [22/Mar/2026 11:42:51] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 3, '2026-03-22 11:42:51');
+127.0.0.1 - - [22/Mar/2026 11:42:51] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 4, '2026-03-22 11:42:51');
+127.0.0.1 - - [22/Mar/2026 11:42:51] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 5, '2026-03-22 11:42:52');
+127.0.0.1 - - [22/Mar/2026 11:42:52] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 6, '2026-03-22 11:42:52');
+127.0.0.1 - - [22/Mar/2026 11:42:52] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 7, '2026-03-22 11:42:53');
+127.0.0.1 - - [22/Mar/2026 11:42:53] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 8, '2026-03-22 11:42:53');
+127.0.0.1 - - [22/Mar/2026 11:42:53] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 9, '2026-03-22 11:42:54');
+127.0.0.1 - - [22/Mar/2026 11:42:54] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 10, '2026-03-22 11:42:54');
+127.0.0.1 - - [22/Mar/2026 11:42:54] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 11, '2026-03-22 11:42:55');
+127.0.0.1 - - [22/Mar/2026 11:42:55] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 12, '2026-03-22 11:42:55');
+127.0.0.1 - - [22/Mar/2026 11:42:55] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 13, '2026-03-22 11:42:56');
+127.0.0.1 - - [22/Mar/2026 11:42:56] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 14, '2026-03-22 11:42:56');
+127.0.0.1 - - [22/Mar/2026 11:42:56] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 15, '2026-03-22 11:42:56');
+127.0.0.1 - - [22/Mar/2026 11:42:57] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 16, '2026-03-22 11:42:57');
+127.0.0.1 - - [22/Mar/2026 11:42:57] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 17, '2026-03-22 11:42:57');
+127.0.0.1 - - [22/Mar/2026 11:42:57] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 18, '2026-03-22 11:42:58');
+127.0.0.1 - - [22/Mar/2026 11:42:58] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 19, '2026-03-22 11:42:58');
+127.0.0.1 - - [22/Mar/2026 11:42:58] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 20, '2026-03-22 11:42:59');
+127.0.0.1 - - [22/Mar/2026 11:42:59] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 21, '2026-03-22 11:42:59');
+127.0.0.1 - - [22/Mar/2026 11:42:59] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 22, '2026-03-22 11:43:00');
+127.0.0.1 - - [22/Mar/2026 11:43:00] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 23, '2026-03-22 11:43:00');
+127.0.0.1 - - [22/Mar/2026 11:43:00] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 24, '2026-03-22 11:43:01');
+127.0.0.1 - - [22/Mar/2026 11:43:01] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 25, '2026-03-22 11:43:01');
+127.0.0.1 - - [22/Mar/2026 11:43:01] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 26, '2026-03-22 11:43:01');
+127.0.0.1 - - [22/Mar/2026 11:43:02] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 27, '2026-03-22 11:43:02');
+127.0.0.1 - - [22/Mar/2026 11:43:02] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 28, '2026-03-22 11:43:02');
+127.0.0.1 - - [22/Mar/2026 11:43:02] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 29, '2026-03-22 11:43:03');
+127.0.0.1 - - [22/Mar/2026 11:43:03] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 30, '2026-03-22 11:43:03');
+127.0.0.1 - - [22/Mar/2026 11:43:03] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 31, '2026-03-22 11:43:04');
+127.0.0.1 - - [22/Mar/2026 11:43:04] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 32, '2026-03-22 11:43:04');
+127.0.0.1 - - [22/Mar/2026 11:43:04] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 33, '2026-03-22 11:43:05');
+127.0.0.1 - - [22/Mar/2026 11:43:05] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 34, '2026-03-22 11:43:05');
+127.0.0.1 - - [22/Mar/2026 11:43:05] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 35, '2026-03-22 11:43:06');
+127.0.0.1 - - [22/Mar/2026 11:43:06] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 36, '2026-03-22 11:43:06');
+127.0.0.1 - - [22/Mar/2026 11:43:06] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 37, '2026-03-22 11:43:07');
+127.0.0.1 - - [22/Mar/2026 11:43:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 38, '2026-03-22 11:43:07');
+127.0.0.1 - - [22/Mar/2026 11:43:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 39, '2026-03-22 11:43:07');
+127.0.0.1 - - [22/Mar/2026 11:43:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 40, '2026-03-22 11:43:08');
+127.0.0.1 - - [22/Mar/2026 11:43:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 41, '2026-03-22 11:43:08');
+127.0.0.1 - - [22/Mar/2026 11:43:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 42, '2026-03-22 11:43:09');
+127.0.0.1 - - [22/Mar/2026 11:43:09] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 44, '2026-03-22 11:43:10');
+127.0.0.1 - - [22/Mar/2026 11:43:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 45, '2026-03-22 11:43:10');
+127.0.0.1 - - [22/Mar/2026 11:43:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 46, '2026-03-22 11:43:10');
+127.0.0.1 - - [22/Mar/2026 11:43:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 47, '2026-03-22 11:43:11');
+127.0.0.1 - - [22/Mar/2026 11:43:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 48, '2026-03-22 11:43:11');
+127.0.0.1 - - [22/Mar/2026 11:43:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 49, '2026-03-22 11:43:12');
+127.0.0.1 - - [22/Mar/2026 11:43:12] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 50, '2026-03-22 11:43:12');
+127.0.0.1 - - [22/Mar/2026 11:43:12] "POST /temperatures HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:44:26] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:44:27] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 11:44:27] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 11:44:28] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 11:44:28] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 11:44:29');
+127.0.0.1 - - [22/Mar/2026 11:44:29] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 1, '2026-03-22 11:44:30');
+127.0.0.1 - - [22/Mar/2026 11:44:30] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 2, '2026-03-22 11:44:30');
+127.0.0.1 - - [22/Mar/2026 11:44:30] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 3, '2026-03-22 11:44:31');
+127.0.0.1 - - [22/Mar/2026 11:44:31] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 4, '2026-03-22 11:44:31');
+127.0.0.1 - - [22/Mar/2026 11:44:31] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 5, '2026-03-22 11:44:32');
+127.0.0.1 - - [22/Mar/2026 11:44:32] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 6, '2026-03-22 11:44:32');
+127.0.0.1 - - [22/Mar/2026 11:44:32] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 7, '2026-03-22 11:44:33');
+127.0.0.1 - - [22/Mar/2026 11:44:33] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 8, '2026-03-22 11:44:33');
+127.0.0.1 - - [22/Mar/2026 11:44:33] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 9, '2026-03-22 11:44:33');
+127.0.0.1 - - [22/Mar/2026 11:44:33] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 10, '2026-03-22 11:44:34');
+127.0.0.1 - - [22/Mar/2026 11:44:34] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 11, '2026-03-22 11:44:34');
+127.0.0.1 - - [22/Mar/2026 11:44:34] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 12, '2026-03-22 11:44:35');
+127.0.0.1 - - [22/Mar/2026 11:44:35] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 13, '2026-03-22 11:44:35');
+127.0.0.1 - - [22/Mar/2026 11:44:35] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 14, '2026-03-22 11:44:36');
+127.0.0.1 - - [22/Mar/2026 11:44:36] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 15, '2026-03-22 11:44:36');
+127.0.0.1 - - [22/Mar/2026 11:44:36] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 16, '2026-03-22 11:44:37');
+127.0.0.1 - - [22/Mar/2026 11:44:37] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 17, '2026-03-22 11:44:37');
+127.0.0.1 - - [22/Mar/2026 11:44:37] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 18, '2026-03-22 11:44:37');
+127.0.0.1 - - [22/Mar/2026 11:44:38] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 19, '2026-03-22 11:44:38');
+127.0.0.1 - - [22/Mar/2026 11:44:38] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 20, '2026-03-22 11:44:38');
+127.0.0.1 - - [22/Mar/2026 11:44:38] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 21, '2026-03-22 11:44:39');
+127.0.0.1 - - [22/Mar/2026 11:44:39] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 22, '2026-03-22 11:44:39');
+127.0.0.1 - - [22/Mar/2026 11:44:39] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 23, '2026-03-22 11:44:40');
+127.0.0.1 - - [22/Mar/2026 11:44:40] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 24, '2026-03-22 11:44:40');
+127.0.0.1 - - [22/Mar/2026 11:44:40] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 25, '2026-03-22 11:44:41');
+127.0.0.1 - - [22/Mar/2026 11:44:41] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 26, '2026-03-22 11:44:41');
+127.0.0.1 - - [22/Mar/2026 11:44:41] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 27, '2026-03-22 11:44:42');
+127.0.0.1 - - [22/Mar/2026 11:44:42] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 28, '2026-03-22 11:44:42');
+127.0.0.1 - - [22/Mar/2026 11:44:42] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 29, '2026-03-22 11:44:42');
+127.0.0.1 - - [22/Mar/2026 11:44:43] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 30, '2026-03-22 11:44:43');
+127.0.0.1 - - [22/Mar/2026 11:44:43] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 31, '2026-03-22 11:44:43');
+127.0.0.1 - - [22/Mar/2026 11:44:43] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 32, '2026-03-22 11:44:44');
+127.0.0.1 - - [22/Mar/2026 11:44:44] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 33, '2026-03-22 11:44:44');
+127.0.0.1 - - [22/Mar/2026 11:44:44] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 34, '2026-03-22 11:44:45');
+127.0.0.1 - - [22/Mar/2026 11:44:45] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 35, '2026-03-22 11:44:45');
+127.0.0.1 - - [22/Mar/2026 11:44:45] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 36, '2026-03-22 11:44:46');
+127.0.0.1 - - [22/Mar/2026 11:44:46] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 37, '2026-03-22 11:44:46');
+127.0.0.1 - - [22/Mar/2026 11:44:46] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 38, '2026-03-22 11:44:47');
+127.0.0.1 - - [22/Mar/2026 11:44:47] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 39, '2026-03-22 11:44:47');
+127.0.0.1 - - [22/Mar/2026 11:44:47] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 40, '2026-03-22 11:44:47');
+127.0.0.1 - - [22/Mar/2026 11:44:48] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 41, '2026-03-22 11:44:48');
+127.0.0.1 - - [22/Mar/2026 11:44:48] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 42, '2026-03-22 11:44:48');
+127.0.0.1 - - [22/Mar/2026 11:44:48] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 43, '2026-03-22 11:44:49');
+127.0.0.1 - - [22/Mar/2026 11:44:49] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 44, '2026-03-22 11:44:49');
+127.0.0.1 - - [22/Mar/2026 11:44:49] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 45, '2026-03-22 11:44:50');
+127.0.0.1 - - [22/Mar/2026 11:44:50] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 46, '2026-03-22 11:44:50');
+127.0.0.1 - - [22/Mar/2026 11:44:50] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 47, '2026-03-22 11:44:51');
+127.0.0.1 - - [22/Mar/2026 11:44:51] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 48, '2026-03-22 11:44:51');
+127.0.0.1 - - [22/Mar/2026 11:44:51] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 49, '2026-03-22 11:44:52');
+127.0.0.1 - - [22/Mar/2026 11:44:52] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 50, '2026-03-22 11:44:52');
+127.0.0.1 - - [22/Mar/2026 11:44:52] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 51, '2026-03-22 11:44:52');
+127.0.0.1 - - [22/Mar/2026 11:44:53] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 52, '2026-03-22 11:44:53');
+127.0.0.1 - - [22/Mar/2026 11:44:53] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 53, '2026-03-22 11:44:53');
+127.0.0.1 - - [22/Mar/2026 11:44:53] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 54, '2026-03-22 11:44:54');
+127.0.0.1 - - [22/Mar/2026 11:44:54] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 55, '2026-03-22 11:44:54');
+127.0.0.1 - - [22/Mar/2026 11:44:54] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 56, '2026-03-22 11:44:55');
+127.0.0.1 - - [22/Mar/2026 11:44:55] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 57, '2026-03-22 11:44:55');
+127.0.0.1 - - [22/Mar/2026 11:44:55] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 58, '2026-03-22 11:44:56');
+127.0.0.1 - - [22/Mar/2026 11:44:56] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 59, '2026-03-22 11:44:56');
+127.0.0.1 - - [22/Mar/2026 11:44:56] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 60, '2026-03-22 11:44:57');
+127.0.0.1 - - [22/Mar/2026 11:44:57] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 61, '2026-03-22 11:44:57');
+127.0.0.1 - - [22/Mar/2026 11:44:57] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 62, '2026-03-22 11:44:58');
+127.0.0.1 - - [22/Mar/2026 11:44:58] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 63, '2026-03-22 11:44:58');
+127.0.0.1 - - [22/Mar/2026 11:44:58] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 64, '2026-03-22 11:44:58');
+127.0.0.1 - - [22/Mar/2026 11:44:59] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 65, '2026-03-22 11:44:59');
+127.0.0.1 - - [22/Mar/2026 11:44:59] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 66, '2026-03-22 11:44:59');
+127.0.0.1 - - [22/Mar/2026 11:44:59] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 67, '2026-03-22 11:45:00');
+127.0.0.1 - - [22/Mar/2026 11:45:00] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 68, '2026-03-22 11:45:00');
+127.0.0.1 - - [22/Mar/2026 11:45:00] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 69, '2026-03-22 11:45:01');
+127.0.0.1 - - [22/Mar/2026 11:45:01] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 70, '2026-03-22 11:45:01');
+127.0.0.1 - - [22/Mar/2026 11:45:01] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 71, '2026-03-22 11:45:02');
+127.0.0.1 - - [22/Mar/2026 11:45:02] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 72, '2026-03-22 11:45:02');
+127.0.0.1 - - [22/Mar/2026 11:45:02] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 73, '2026-03-22 11:45:03');
+127.0.0.1 - - [22/Mar/2026 11:45:03] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 74, '2026-03-22 11:45:03');
+127.0.0.1 - - [22/Mar/2026 11:45:03] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 75, '2026-03-22 11:45:04');
+127.0.0.1 - - [22/Mar/2026 11:45:04] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 76, '2026-03-22 11:45:04');
+127.0.0.1 - - [22/Mar/2026 11:45:04] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 77, '2026-03-22 11:45:04');
+127.0.0.1 - - [22/Mar/2026 11:45:04] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 78, '2026-03-22 11:45:05');
+127.0.0.1 - - [22/Mar/2026 11:45:05] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 79, '2026-03-22 11:45:05');
+127.0.0.1 - - [22/Mar/2026 11:45:05] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 80, '2026-03-22 11:45:06');
+127.0.0.1 - - [22/Mar/2026 11:45:06] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 81, '2026-03-22 11:45:06');
+127.0.0.1 - - [22/Mar/2026 11:45:06] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 82, '2026-03-22 11:45:07');
+127.0.0.1 - - [22/Mar/2026 11:45:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 83, '2026-03-22 11:45:07');
+127.0.0.1 - - [22/Mar/2026 11:45:07] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 84, '2026-03-22 11:45:08');
+127.0.0.1 - - [22/Mar/2026 11:45:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 85, '2026-03-22 11:45:08');
+127.0.0.1 - - [22/Mar/2026 11:45:08] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 86, '2026-03-22 11:45:09');
+127.0.0.1 - - [22/Mar/2026 11:45:09] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 87, '2026-03-22 11:45:09');
+127.0.0.1 - - [22/Mar/2026 11:45:09] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 88, '2026-03-22 11:45:10');
+127.0.0.1 - - [22/Mar/2026 11:45:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 89, '2026-03-22 11:45:10');
+127.0.0.1 - - [22/Mar/2026 11:45:10] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 90, '2026-03-22 11:45:10');
+127.0.0.1 - - [22/Mar/2026 11:45:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 91, '2026-03-22 11:45:11');
+127.0.0.1 - - [22/Mar/2026 11:45:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 92, '2026-03-22 11:45:11');
+127.0.0.1 - - [22/Mar/2026 11:45:11] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 93, '2026-03-22 11:45:12');
+127.0.0.1 - - [22/Mar/2026 11:45:12] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 94, '2026-03-22 11:45:12');
+127.0.0.1 - - [22/Mar/2026 11:45:12] "POST /temperatures HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 95, '2026-03-22 11:45:13');
+127.0.0.1 - - [22/Mar/2026 11:45:13] "POST /temperatures HTTP/1.1" 200 -
+SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Date_capteur = Humidite.Date_capteur AND Temperature.Capteur = 1 AND Humidite.Capteur = 1;
+127.0.0.1 - - [22/Mar/2026 11:45:14] "GET /capteur1 HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:47:23] "GET /initialize_global HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 30.2, '2026-03-22 11:47:40');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 100.0, '2026-03-22 11:47:40');
+127.0.0.1 - - [22/Mar/2026 11:47:40] "POST /capteur1 HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:50:40] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:50:41] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 11:50:41] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 11:50:42] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 11:50:42] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 11:50:43');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 96, '2026-03-22 11:50:43');
+127.0.0.1 - - [22/Mar/2026 11:50:43] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 1, '2026-03-22 11:50:44');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 95, '2026-03-22 11:50:44');
+127.0.0.1 - - [22/Mar/2026 11:50:44] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 2, '2026-03-22 11:50:44');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 94, '2026-03-22 11:50:44');
+127.0.0.1 - - [22/Mar/2026 11:50:44] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 3, '2026-03-22 11:50:45');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 93, '2026-03-22 11:50:45');
+127.0.0.1 - - [22/Mar/2026 11:50:45] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 4, '2026-03-22 11:50:45');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 92, '2026-03-22 11:50:45');
+127.0.0.1 - - [22/Mar/2026 11:50:45] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 5, '2026-03-22 11:50:46');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 91, '2026-03-22 11:50:46');
+127.0.0.1 - - [22/Mar/2026 11:50:46] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 6, '2026-03-22 11:50:46');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 90, '2026-03-22 11:50:46');
+127.0.0.1 - - [22/Mar/2026 11:50:46] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 7, '2026-03-22 11:50:47');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 89, '2026-03-22 11:50:47');
+127.0.0.1 - - [22/Mar/2026 11:50:47] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 8, '2026-03-22 11:50:47');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 88, '2026-03-22 11:50:47');
+127.0.0.1 - - [22/Mar/2026 11:50:47] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 9, '2026-03-22 11:50:48');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 87, '2026-03-22 11:50:48');
+127.0.0.1 - - [22/Mar/2026 11:50:48] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 10, '2026-03-22 11:50:48');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 86, '2026-03-22 11:50:48');
+127.0.0.1 - - [22/Mar/2026 11:50:48] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 11, '2026-03-22 11:50:49');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 85, '2026-03-22 11:50:49');
+127.0.0.1 - - [22/Mar/2026 11:50:49] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 12, '2026-03-22 11:50:49');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 84, '2026-03-22 11:50:49');
+127.0.0.1 - - [22/Mar/2026 11:50:49] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 13, '2026-03-22 11:50:50');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 83, '2026-03-22 11:50:50');
+127.0.0.1 - - [22/Mar/2026 11:50:50] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 14, '2026-03-22 11:50:50');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 82, '2026-03-22 11:50:50');
+127.0.0.1 - - [22/Mar/2026 11:50:50] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 15, '2026-03-22 11:50:51');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 81, '2026-03-22 11:50:51');
+127.0.0.1 - - [22/Mar/2026 11:50:51] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 16, '2026-03-22 11:50:51');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 80, '2026-03-22 11:50:51');
+127.0.0.1 - - [22/Mar/2026 11:50:51] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 17, '2026-03-22 11:50:52');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 79, '2026-03-22 11:50:52');
+127.0.0.1 - - [22/Mar/2026 11:50:52] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 18, '2026-03-22 11:50:52');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 78, '2026-03-22 11:50:52');
+127.0.0.1 - - [22/Mar/2026 11:50:52] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 19, '2026-03-22 11:50:53');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 77, '2026-03-22 11:50:53');
+127.0.0.1 - - [22/Mar/2026 11:50:53] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 20, '2026-03-22 11:50:53');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 76, '2026-03-22 11:50:53');
+127.0.0.1 - - [22/Mar/2026 11:50:53] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 21, '2026-03-22 11:50:54');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 75, '2026-03-22 11:50:54');
+127.0.0.1 - - [22/Mar/2026 11:50:54] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 22, '2026-03-22 11:50:54');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 74, '2026-03-22 11:50:54');
+127.0.0.1 - - [22/Mar/2026 11:50:54] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 23, '2026-03-22 11:50:55');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 73, '2026-03-22 11:50:55');
+127.0.0.1 - - [22/Mar/2026 11:50:55] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 24, '2026-03-22 11:50:55');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 72, '2026-03-22 11:50:55');
+127.0.0.1 - - [22/Mar/2026 11:50:55] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 25, '2026-03-22 11:50:56');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 71, '2026-03-22 11:50:56');
+127.0.0.1 - - [22/Mar/2026 11:50:56] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 26, '2026-03-22 11:50:56');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 70, '2026-03-22 11:50:56');
+127.0.0.1 - - [22/Mar/2026 11:50:56] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 27, '2026-03-22 11:50:57');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 69, '2026-03-22 11:50:57');
+127.0.0.1 - - [22/Mar/2026 11:50:57] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 28, '2026-03-22 11:50:57');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 68, '2026-03-22 11:50:57');
+127.0.0.1 - - [22/Mar/2026 11:50:57] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 29, '2026-03-22 11:50:58');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 67, '2026-03-22 11:50:58');
+127.0.0.1 - - [22/Mar/2026 11:50:58] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 30, '2026-03-22 11:50:58');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 66, '2026-03-22 11:50:58');
+127.0.0.1 - - [22/Mar/2026 11:50:58] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 31, '2026-03-22 11:50:59');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 65, '2026-03-22 11:50:59');
+127.0.0.1 - - [22/Mar/2026 11:50:59] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 32, '2026-03-22 11:50:59');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 64, '2026-03-22 11:50:59');
+127.0.0.1 - - [22/Mar/2026 11:50:59] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 33, '2026-03-22 11:51:00');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 63, '2026-03-22 11:51:00');
+127.0.0.1 - - [22/Mar/2026 11:51:00] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 34, '2026-03-22 11:51:00');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 62, '2026-03-22 11:51:00');
+127.0.0.1 - - [22/Mar/2026 11:51:00] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 35, '2026-03-22 11:51:01');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 61, '2026-03-22 11:51:01');
+127.0.0.1 - - [22/Mar/2026 11:51:01] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 36, '2026-03-22 11:51:01');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 60, '2026-03-22 11:51:01');
+127.0.0.1 - - [22/Mar/2026 11:51:01] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 37, '2026-03-22 11:51:02');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 59, '2026-03-22 11:51:02');
+127.0.0.1 - - [22/Mar/2026 11:51:02] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 38, '2026-03-22 11:51:02');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 58, '2026-03-22 11:51:02');
+127.0.0.1 - - [22/Mar/2026 11:51:02] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 39, '2026-03-22 11:51:03');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 57, '2026-03-22 11:51:03');
+127.0.0.1 - - [22/Mar/2026 11:51:03] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 40, '2026-03-22 11:51:03');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 56, '2026-03-22 11:51:03');
+127.0.0.1 - - [22/Mar/2026 11:51:03] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 41, '2026-03-22 11:51:04');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 55, '2026-03-22 11:51:04');
+127.0.0.1 - - [22/Mar/2026 11:51:04] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 42, '2026-03-22 11:51:04');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 54, '2026-03-22 11:51:04');
+127.0.0.1 - - [22/Mar/2026 11:51:04] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 43, '2026-03-22 11:51:05');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 53, '2026-03-22 11:51:05');
+127.0.0.1 - - [22/Mar/2026 11:51:05] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 44, '2026-03-22 11:51:05');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 52, '2026-03-22 11:51:05');
+127.0.0.1 - - [22/Mar/2026 11:51:05] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 45, '2026-03-22 11:51:06');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 51, '2026-03-22 11:51:06');
+127.0.0.1 - - [22/Mar/2026 11:51:06] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 46, '2026-03-22 11:51:06');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 50, '2026-03-22 11:51:06');
+127.0.0.1 - - [22/Mar/2026 11:51:06] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 47, '2026-03-22 11:51:07');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 49, '2026-03-22 11:51:07');
+127.0.0.1 - - [22/Mar/2026 11:51:07] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 48, '2026-03-22 11:51:07');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 48, '2026-03-22 11:51:07');
+127.0.0.1 - - [22/Mar/2026 11:51:08] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 49, '2026-03-22 11:51:08');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 47, '2026-03-22 11:51:08');
+127.0.0.1 - - [22/Mar/2026 11:51:08] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 50, '2026-03-22 11:51:08');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 46, '2026-03-22 11:51:08');
+127.0.0.1 - - [22/Mar/2026 11:51:09] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 51, '2026-03-22 11:51:09');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 45, '2026-03-22 11:51:09');
+127.0.0.1 - - [22/Mar/2026 11:51:09] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 52, '2026-03-22 11:51:09');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 44, '2026-03-22 11:51:09');
+127.0.0.1 - - [22/Mar/2026 11:51:10] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 53, '2026-03-22 11:51:10');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 43, '2026-03-22 11:51:10');
+127.0.0.1 - - [22/Mar/2026 11:51:10] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 54, '2026-03-22 11:51:11');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 42, '2026-03-22 11:51:11');
+127.0.0.1 - - [22/Mar/2026 11:51:11] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 55, '2026-03-22 11:51:11');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 41, '2026-03-22 11:51:11');
+127.0.0.1 - - [22/Mar/2026 11:51:11] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 56, '2026-03-22 11:51:12');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 40, '2026-03-22 11:51:12');
+127.0.0.1 - - [22/Mar/2026 11:51:12] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 57, '2026-03-22 11:51:12');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 39, '2026-03-22 11:51:12');
+127.0.0.1 - - [22/Mar/2026 11:51:12] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 58, '2026-03-22 11:51:13');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 38, '2026-03-22 11:51:13');
+127.0.0.1 - - [22/Mar/2026 11:51:13] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 59, '2026-03-22 11:51:13');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 37, '2026-03-22 11:51:13');
+127.0.0.1 - - [22/Mar/2026 11:51:13] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 60, '2026-03-22 11:51:14');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 36, '2026-03-22 11:51:14');
+127.0.0.1 - - [22/Mar/2026 11:51:14] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 61, '2026-03-22 11:51:14');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 35, '2026-03-22 11:51:14');
+127.0.0.1 - - [22/Mar/2026 11:51:14] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 62, '2026-03-22 11:51:15');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 34, '2026-03-22 11:51:15');
+127.0.0.1 - - [22/Mar/2026 11:51:15] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 63, '2026-03-22 11:51:15');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 33, '2026-03-22 11:51:15');
+127.0.0.1 - - [22/Mar/2026 11:51:15] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 64, '2026-03-22 11:51:16');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 32, '2026-03-22 11:51:16');
+127.0.0.1 - - [22/Mar/2026 11:51:16] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 65, '2026-03-22 11:51:16');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 31, '2026-03-22 11:51:16');
+127.0.0.1 - - [22/Mar/2026 11:51:16] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 66, '2026-03-22 11:51:17');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 30, '2026-03-22 11:51:17');
+127.0.0.1 - - [22/Mar/2026 11:51:17] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 67, '2026-03-22 11:51:17');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 29, '2026-03-22 11:51:17');
+127.0.0.1 - - [22/Mar/2026 11:51:17] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 68, '2026-03-22 11:51:18');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 28, '2026-03-22 11:51:18');
+127.0.0.1 - - [22/Mar/2026 11:51:18] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 69, '2026-03-22 11:51:18');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 27, '2026-03-22 11:51:18');
+127.0.0.1 - - [22/Mar/2026 11:51:18] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 70, '2026-03-22 11:51:19');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 26, '2026-03-22 11:51:19');
+127.0.0.1 - - [22/Mar/2026 11:51:19] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 71, '2026-03-22 11:51:19');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 25, '2026-03-22 11:51:19');
+127.0.0.1 - - [22/Mar/2026 11:51:19] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 72, '2026-03-22 11:51:20');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 24, '2026-03-22 11:51:20');
+127.0.0.1 - - [22/Mar/2026 11:51:20] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 73, '2026-03-22 11:51:20');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 23, '2026-03-22 11:51:20');
+127.0.0.1 - - [22/Mar/2026 11:51:20] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 74, '2026-03-22 11:51:21');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 22, '2026-03-22 11:51:21');
+127.0.0.1 - - [22/Mar/2026 11:51:21] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 75, '2026-03-22 11:51:21');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 21, '2026-03-22 11:51:21');
+127.0.0.1 - - [22/Mar/2026 11:51:21] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 76, '2026-03-22 11:51:22');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 20, '2026-03-22 11:51:22');
+127.0.0.1 - - [22/Mar/2026 11:51:22] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 77, '2026-03-22 11:51:22');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 19, '2026-03-22 11:51:22');
+127.0.0.1 - - [22/Mar/2026 11:51:22] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 78, '2026-03-22 11:51:23');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 18, '2026-03-22 11:51:23');
+127.0.0.1 - - [22/Mar/2026 11:51:23] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 79, '2026-03-22 11:51:23');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 17, '2026-03-22 11:51:23');
+127.0.0.1 - - [22/Mar/2026 11:51:23] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 80, '2026-03-22 11:51:24');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 16, '2026-03-22 11:51:24');
+127.0.0.1 - - [22/Mar/2026 11:51:24] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 81, '2026-03-22 11:51:24');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 15, '2026-03-22 11:51:24');
+127.0.0.1 - - [22/Mar/2026 11:51:24] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 82, '2026-03-22 11:51:25');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 14, '2026-03-22 11:51:25');
+127.0.0.1 - - [22/Mar/2026 11:51:25] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 83, '2026-03-22 11:51:25');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 13, '2026-03-22 11:51:25');
+127.0.0.1 - - [22/Mar/2026 11:51:25] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 84, '2026-03-22 11:51:26');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 12, '2026-03-22 11:51:26');
+127.0.0.1 - - [22/Mar/2026 11:51:26] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 85, '2026-03-22 11:51:26');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 11, '2026-03-22 11:51:26');
+127.0.0.1 - - [22/Mar/2026 11:51:26] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 86, '2026-03-22 11:51:27');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 10, '2026-03-22 11:51:27');
+127.0.0.1 - - [22/Mar/2026 11:51:27] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 87, '2026-03-22 11:51:27');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 9, '2026-03-22 11:51:27');
+127.0.0.1 - - [22/Mar/2026 11:51:27] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 88, '2026-03-22 11:51:28');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 8, '2026-03-22 11:51:28');
+127.0.0.1 - - [22/Mar/2026 11:51:28] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 89, '2026-03-22 11:51:28');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 7, '2026-03-22 11:51:28');
+127.0.0.1 - - [22/Mar/2026 11:51:28] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 90, '2026-03-22 11:51:29');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 6, '2026-03-22 11:51:29');
+127.0.0.1 - - [22/Mar/2026 11:51:29] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 91, '2026-03-22 11:51:29');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 5, '2026-03-22 11:51:29');
+127.0.0.1 - - [22/Mar/2026 11:51:29] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 92, '2026-03-22 11:51:30');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 4, '2026-03-22 11:51:30');
+127.0.0.1 - - [22/Mar/2026 11:51:30] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 93, '2026-03-22 11:51:30');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 3, '2026-03-22 11:51:30');
+127.0.0.1 - - [22/Mar/2026 11:51:30] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 94, '2026-03-22 11:51:31');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 2, '2026-03-22 11:51:31');
+127.0.0.1 - - [22/Mar/2026 11:51:31] "POST /capteur1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 95, '2026-03-22 11:51:31');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 1, '2026-03-22 11:51:31');
+127.0.0.1 - - [22/Mar/2026 11:51:31] "POST /capteur1 HTTP/1.1" 200 -
+SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Date_capteur = Humidite.Date_capteur AND Temperature.Capteur = 1 AND Humidite.Capteur = 1;
+127.0.0.1 - - [22/Mar/2026 11:51:33] "GET /capteur1 HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 11:53:35] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 11:53:37] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 11:53:37] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 11:53:38] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 11:53:38] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 11:53:39');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 96, '2026-03-22 11:53:39');
+127.0.0.1 - - [22/Mar/2026 11:53:39] "POST /capteur1 HTTP/1.1" 200 -
+SELECT Temperature.Temperature_id, Temperature.Capteur, Temperature.Temp, Humidite.Hum, Temperature.Date_capteur FROM Temperature, Humidite WHERE Temperature.Date_capteur = Humidite.Date_capteur AND Temperature.Capteur = 1 AND Humidite.Capteur = 1;
+127.0.0.1 - - [22/Mar/2026 11:53:41] "GET /capteur1 HTTP/1.1" 200 -
  * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 802-456-720
+ * Debugger PIN: 710-095-007
  * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 802-456-720
+ * Debugger PIN: 710-095-007
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 96;
+127.0.0.1 - - [22/Mar/2026 12:10:55] "GET /historique24h HTTP/1.1" 200 -
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 710-095-007
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 96;
+127.0.0.1 - - [22/Mar/2026 12:14:04] "[35m[1mGET /historique24h HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 474, in route_hitorique24_get
+    json_return[1] = {  'Capteur ID': reponse_temp_capteur1[1],
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 710-095-007
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 96;
+127.0.0.1 - - [22/Mar/2026 12:21:33] "[35m[1mGET /historique24h HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 482, in route_hitorique24_get
+    'Humidite':    hum_row[2],
+                   ^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 710-095-007
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 96;
+127.0.0.1 - - [22/Mar/2026 12:24:14] "[35m[1mGET /historique24h HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 481, in route_hitorique24_get
+    'Humidite':    hum_row[2],
+                   ^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+ * Detected change in '/home/server_test_linux/serre/api_serre/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 710-095-007
+SELECT * FROM Temperature WHERE Capteur = 1 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Humidite WHERE Capteur = 1 ORDER BY Humidite_id DESC LIMIT 96;
+SELECT * FROM Temperature WHERE Capteur = 2 ORDER BY Temperature_id DESC LIMIT 96;
+SELECT * FROM Temperature WHERE Capteur = 3 ORDER BY Temperature_id DESC LIMIT 96;
+127.0.0.1 - - [22/Mar/2026 12:27:21] "GET /historique24h HTTP/1.1" 200 -
+DROP TABLE IF EXISTS Temperature;
+DROP TABLE IF EXISTS Humidite;
+DROP TABLE IF EXISTS Saturation;
+DROP TABLE IF EXISTS Systemes;
+CREATE TABLE Temperature (Temperature_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Temp FLOAT, Date_capteur DATETIME, CONSTRAINT temp_pk PRIMARY KEY (Temperature_id));
+CREATE TABLE Humidite (Humidite_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Hum FLOAT, Date_capteur DATETIME, CONSTRAINT hum_pk PRIMARY KEY (Humidite_id));
+CREATE TABLE Saturation (Saturation_id INT NOT NULL AUTO_INCREMENT, Capteur INT, Mesure FLOAT, Date_capteur DATETIME, CONSTRAINT sat_pk PRIMARY KEY (Saturation_id));
+CREATE TABLE Systemes (Systeme_id INT NOT NULL AUTO_INCREMENT, Systeme VARCHAR(10), Etat BOOL, Date DATETIME, CONSTRAINT sys_pk PRIMARY KEY (Systeme_id));
+127.0.0.1 - - [22/Mar/2026 12:30:38] "GET /initialize_global HTTP/1.1" 200 -
+SELECT * FROM Temperature;
+127.0.0.1 - - [22/Mar/2026 12:30:39] "GET /temperatures HTTP/1.1" 200 -
+SELECT * FROM Humidite;
+127.0.0.1 - - [22/Mar/2026 12:30:39] "GET /humidites HTTP/1.1" 200 -
+SELECT * FROM Saturation;
+127.0.0.1 - - [22/Mar/2026 12:30:40] "GET /saturations HTTP/1.1" 200 -
+SELECT * FROM Systemes;
+127.0.0.1 - - [22/Mar/2026 12:30:40] "GET /etatsSysteme HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 0, '2026-03-22 12:30:42');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 96, '2026-03-22 12:30:42');
+127.0.0.1 - - [22/Mar/2026 12:30:42] "POST /capteur1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Mar/2026 12:30:42] "[35m[1mPOST /capteur2 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 662, in route_capteur2_post
+    return route_capteur_hum_temp_post(2, False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 502, in route_capteur_hum_temp_post
+    if (not representsFloat(temperature)) or (not representsFloat(humidite)):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 263, in representsFloat
+    float(s)
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (3, 0, '2026-03-22 12:30:42');
+127.0.0.1 - - [22/Mar/2026 12:30:42] "POST /capteur3 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-22 12:30:43');
+127.0.0.1 - - [22/Mar/2026 12:30:43] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 1, '2026-03-22 12:30:43');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 95, '2026-03-22 12:30:43');
+127.0.0.1 - - [22/Mar/2026 12:30:43] "POST /capteur1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Mar/2026 12:30:44] "[35m[1mPOST /capteur2 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 662, in route_capteur2_post
+    return route_capteur_hum_temp_post(2, False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 502, in route_capteur_hum_temp_post
+    if (not representsFloat(temperature)) or (not representsFloat(humidite)):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 263, in representsFloat
+    float(s)
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (3, 3, '2026-03-22 12:30:44');
+127.0.0.1 - - [22/Mar/2026 12:30:44] "POST /capteur3 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 0, '2026-03-22 12:30:44');
+127.0.0.1 - - [22/Mar/2026 12:30:44] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 2, '2026-03-22 12:30:45');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 94, '2026-03-22 12:30:45');
+127.0.0.1 - - [22/Mar/2026 12:30:45] "POST /capteur1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Mar/2026 12:30:45] "[35m[1mPOST /capteur2 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 662, in route_capteur2_post
+    return route_capteur_hum_temp_post(2, False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 502, in route_capteur_hum_temp_post
+    if (not representsFloat(temperature)) or (not representsFloat(humidite)):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 263, in representsFloat
+    float(s)
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (3, 6, '2026-03-22 12:30:45');
+127.0.0.1 - - [22/Mar/2026 12:30:45] "POST /capteur3 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 1, '2026-03-22 12:30:46');
+127.0.0.1 - - [22/Mar/2026 12:30:46] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 3, '2026-03-22 12:30:46');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 93, '2026-03-22 12:30:46');
+127.0.0.1 - - [22/Mar/2026 12:30:46] "POST /capteur1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Mar/2026 12:30:47] "[35m[1mPOST /capteur2 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 662, in route_capteur2_post
+    return route_capteur_hum_temp_post(2, False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 502, in route_capteur_hum_temp_post
+    if (not representsFloat(temperature)) or (not representsFloat(humidite)):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/server_test_linux/serre/api_serre/api.py", line 263, in representsFloat
+    float(s)
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (3, 9, '2026-03-22 12:30:47');
+127.0.0.1 - - [22/Mar/2026 12:30:47] "POST /capteur3 HTTP/1.1" 200 -
+INSERT INTO Systemes (Systeme, Etat, Date) VALUES ('fan1', 0, '2026-03-22 12:30:47');
+127.0.0.1 - - [22/Mar/2026 12:30:47] "POST /fan1 HTTP/1.1" 200 -
+INSERT INTO Temperature (Capteur, Temp, Date_capteur) VALUES (1, 4, '2026-03-22 12:30:48');
+INSERT INTO Humidite (Capteur, Hum, Date_capteur) VALUES (1, 92, '2026-03-22 12:30:48');
+127.0.0.1 - - [22/Mar/2026 12:30:48] "POST /capteur1 HTTP/1.1" 200 -

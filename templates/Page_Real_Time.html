@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Serre V4</title>
 
     <!-- Font Awesome -->
@@ -50,46 +51,48 @@
 
 
     <!-- Contenu principal -->
-
-    <div class="content-center">
-        <div class="table-container">
-            <table class="sensor-table">
-                <thead>
-                    <tr>
-                        <th>Capteur</th>
-                        <th>Valeur</th>
-                        <th>Dernière mise à jour</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Température – Haut</td>
-                        <td id="sensor-temp-haut">-- °C</td>
-                        <td id="time-temp-haut">--</td>
-                    </tr>
-                    <tr>
-                        <td>Température – Bas</td>
-                        <td id="sensor-temp-bas">-- °C</td>
-                        <td id="time-temp-bas">--</td>
-                    </tr>
-                    <tr>
-                        <td>Température – Extérieur</td>
-                        <td id="sensor-temp-ext">-- °C</td>
-                        <td id="time-temp-ext">--</td>
-                    </tr>
-                    <tr>
-                        <td>Humidité</td>
-                        <td id="sensor-humidite">-- %</td>
-                        <td id="time-humidite">--</td>
-                    </tr>
-                </tbody>
-            </table>
+    <main>
+        <div class="content-center">
+            <div class="table-container">
+                <table class="sensor-table">
+                    <thead>
+                        <tr>
+                            <th>Capteur</th>
+                            <th>Valeur</th>
+                            <th>Dernière mise à jour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Température – Haut</td>
+                            <td id="sensor-temp-haut">-- °C</td>
+                            <td id="time-temp-haut">--</td>
+                        </tr>
+                        <tr>
+                            <td>Température – Bas</td>
+                            <td id="sensor-temp-bas">-- °C</td>
+                            <td id="time-temp-bas">--</td>
+                        </tr>
+                        <tr>
+                            <td>Température – Extérieur</td>
+                            <td id="sensor-temp-ext">-- °C</td>
+                            <td id="time-temp-ext">--</td>
+                        </tr>
+                        <tr>
+                            <td>Humidité</td>
+                            <td id="sensor-humidite">-- %</td>
+                            <td id="time-humidite">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    
+    </main>
 
 </div>
 
 
 </body>
+
+<script src="{{ url_for('static', filename='realtime.js') }}"></script>
 </html>

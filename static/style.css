@@ -2,19 +2,26 @@ html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    font-size: 36px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Layout global */
 .app-layout {
     display: grid;
     grid-template-rows: 80px 1fr;       /* ruban / contenu */
-    grid-template-columns: 120px 1fr;  /* navbar / main */
+    grid-template-columns: auto 1fr;  /* navbar / main */
     height: 100vh;
+    overflow: hidden;
 }
 
 /* --------------- Ruban ---------------*/
 .title-ribbon {
-    grid-column: 1 / -1; /* prend toute la largeur */
+    grid-row: 1;
+    grid-column: 2;
     background-color: #222;
     color: #00c2ff;
 
@@ -28,12 +35,16 @@ html, body {
 
 /*--------------- Navbar ---------------*/
 .navbar {
-    background-color: #222;
+    grid-row :1/-1;
+    grid-column: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-top: 30px;
+    justify-content: center;
+    gap: 1rem;           /* espace entre icônes */
+    padding: 0rem 1rem; /* vertical | horizontal */
+
+    background-color: #222;
 }
 
 /* Icônes */
@@ -50,23 +61,48 @@ html, body {
 
 /* Main */
 main {
-    padding: 40px;
+    grid-row: 2;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 0;
 }
 
 /* Contenu centré */
 .content-center {
+    
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding : 2%;
+    overflow: hidden;
+    min-height: 0;
+    padding: 2%;
+    width: 100%;
+}
+
+.img-serre{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 /* Conteneur du tableau */
 .table-container {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 0;
+    padding: 2%;
     max-width: 900px;   /* largeur max du tableau */
 }
 
@@ -89,7 +125,7 @@ main {
 .sensor-table th,
 .sensor-table td {
     padding: 20px 28px;
-    text-align: left;
+    text-align: center;
 }
 
 /* Séparateur de lignes */
@@ -99,25 +135,27 @@ main {
 
 /* Colonne "Valeur" mise en avant */
 .sensor-table td:nth-child(2) {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 /* Colonne "Temps" plus discrète */
 .sensor-table td:nth-child(3) {
-    font-size: 15px;
+    font-size: 0.5rem;
     color: #666;
 }
 
 /* Daily graph */
 .graph-container {
+    flex: 1;
     width: 100%;
+    height: 100%;
     max-width: 1000px;
-    height: 500px;
+    max-height: 500px;
 }
 
 /*--------------- Controle ---------------*/
-.control-panel {
+/*.control-panel {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -129,16 +167,17 @@ main {
     background: #bbb;
     border-radius: 12px;
     border: 3px solid #333;
-    padding: 1.5vh;
+    padding: 1vh;
     text-align: center;
 }
 
 .control-group h2 {
     margin: 0px 0px 10px 0px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Boutons */
+/*
 .btn-group {
     display: flex;
     gap: 10px;
@@ -165,8 +204,8 @@ main {
 }
 
 .btn {
-    padding: 12px 20px;
-    font-size: 2rem;
+    padding: 1% 10%;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     background-color: #ddd;
@@ -220,7 +259,7 @@ main {
 
 .slider-group input[type="range"] {
     width: 100%;
-    height: 1rem;        /* épaisseur de la barre */
+    height: 1rem;        
     border-radius: 10px;
     background: #ccc;
     outline: none;
@@ -229,36 +268,193 @@ main {
 }
 
 .slider-label{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .control-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); 
     grid-template-areas:
         "mode   mode"
         "porte  pompe"
         "fan    valves";
-    gap: 2%;
+    gap: 1%;
     width: 100%;
     max-width: 900px;
 }
+*/
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "mode   mode"
+        "porte  pompe"
+        "fan    valves";
+    gap: 1vh;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;           /* ← prend toute la hauteur disponible */
+}
 
-.mode   { grid-area: mode; }
-.porte  { grid-area: porte; }
-.pompe  { grid-area: pompe; }
-.fan    { grid-area: fan; }
-.valves { grid-area: valves; }
+/* Placement explicite de chaque section */
+.control-group.mode   { grid-area: mode; }
+.control-group.porte  { grid-area: porte; }
+.control-group.pompe  { grid-area: pompe; }
+.control-group.fan    { grid-area: fan; }
+.control-group.valves { grid-area: valves; }
 
-@media (max-width: 700px) {
+.control-group {
+    background: #bbb;
+    border-radius: 12px;
+    border: 3px solid #333;
+    padding: 1vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* ← centre le contenu verticalement */
+    min-height: 0;
+}
+
+.control-group h2 {
+    margin: 0 0 1vh 0;
+    font-size: clamp(14px, 3vh, 40px);
+    height: 2.5vh;              /* ← même hauteur partout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-group.fan,
+.control-group.valves {
+    justify-content: flex-start;    /* ← contenu part du haut */
+}
+
+
+
+.control-group.fan .btn-column,
+.control-group.valves .btn-column {
+    gap: 0.8vh;                     /* ← même gap dans les deux colonnes */
+}
+
+
+
+/* Boutons */
+.btn-row {
+    display: flex;
+    gap: 1vh;
+    justify-content: center;
+}
+
+.btn-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+.btn {
+    padding: 3vh 5%;
+    font-size: clamp(12px, 3vh, 40px);
+    border: solid black 2px;
+    border-radius: 8px;
+    background-color: #ddd;
+    cursor: pointer;
+    height: 4vh;                /* ← même hauteur partout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-on.active  { background-color: #2ecc71; color: white; border: solid black 3px; }
+.btn-off.active { background-color: #a4161a; color: white; border: solid black 3px; }
+.btn-std.active { background-color: #00c2ff; color: #fff;  border: solid black 3px; }
+.btn-on         { background-color: #27ae60; color: white; }
+.btn-off        { background-color: #e74c3c; color: white; }
+.btn-on:hover   { background: #2ecc71; }
+.btn-off:hover  { background: #a4161a; }
+.btn-std:hover  { background: #00c2ff; }
+
+.btn.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.slider-group {
+    margin-top: 1vh;
+    width: 100%;
+}
+
+.slider-group input[type="range"] {
+    width: 100%;
+    height: clamp(8px, 1.5vh, 16px);
+    border-radius: 10px;
+    background: #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-label {
+    font-size: clamp(12px, 1.8vh, 18px);
+    margin-top: 0.5vh;
+}
+
+@media (max-width: 768px) {
+
+    .app-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+    .title-ribbon {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 20px;
+    }
+    h1{
+        margin: 0;
+    }
+    .navbar {
+        grid-column: 1;
+        grid-row: 2;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    .navbar a {
+        font-size: clamp(36px, 8vw, 56px);
+    }
+
+    main {
+        grid-column: 1;
+        grid-row: 3;     
+        min-height: 0;
+    }
+
+    .content-center {
+        grid-column: 1;
+        grid-row: 1; 
+    }
+
     .control-grid {
         grid-template-columns: 1fr;
-        grid-template-areas:
-            "mode"
-            "porte"
-            "pompe"
-            "fan"
-            "valves";
+    }
+
+    .table-container{
+        grid-column: 1;
+        grid-row: 1; 
+    }
+    .sensor-table th,
+    .sensor-table td {
+        padding: 1% 0.5%;
+        text-align: center;
+    }
+
+    .graph-container {
+        flex : 1;
+        height: auto;          
+        max-height: 100%;   
+        width: 100%;
     }
 }
 
