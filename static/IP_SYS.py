@@ -1,0 +1,13 @@
+API_BASE = "http://10.0.0.99:8080"
+
+ROUTE_CTRL_FAN1 = "http://10.0.0.129/power?level="
+
+ROUTE_CTRL_PORTE = "http://10.0.0.239/PORTE="
+
+ROUTE_CTRL_POMPE = "http://10.0.0.239/POMPE="
+
+ROUTE_CTRL_VALVE1 = "http://10.0.0.13/VALVE1="
+
+ROUTE_CTRL_VALVE3 = "http://10.0.0.13/VALVE2="
+
+ROUTE_CTRL_VALVE3 = "http://10.0.0.13/VALVE3="

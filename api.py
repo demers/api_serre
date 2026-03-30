@@ -65,7 +65,7 @@ def getTemperatureFromDB(test = True, capteur = 0, last = False):
         return getDB().runSelectOneQuery(query)
     else:
         return getDB().runSelectQuery(query)
-    
+"""
 def getHistorique24HTempFromDB(test = True, capteur = 0):
     if test:
         test_str = '_test'
@@ -81,7 +81,32 @@ def getHistorique24HTempFromDB(test = True, capteur = 0):
         query = "SELECT * FROM Temperature" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
 
     return getDB().runSelectQuery(query)
+"""    
+def getHistorique24HTempFromDB(test=True, capteur=0):
+    if test:
+        test_str = '_test'
+    else:
+        test_str = ''
 
+    order_str = ' ORDER BY Temperature_id DESC'
+    time_filter = " WHERE Date_capteur >= NOW() - INTERVAL 24 HOUR"
+
+    if capteur < 1:
+        query = (
+            "SELECT * FROM Temperature" + test_str
+            + time_filter
+            + order_str + ';'
+        )
+    else:
+        query = (
+            "SELECT * FROM Temperature" + test_str
+            + time_filter
+            + " AND Capteur = " + str(capteur)
+            + order_str + ';'
+        )
+
+    return getDB().runSelectQuery(query)
+"""
 def getHistorique24HHumFromDB(test = True, capteur = 0):
     if test:
         test_str = '_test'
@@ -97,7 +122,31 @@ def getHistorique24HHumFromDB(test = True, capteur = 0):
         query = "SELECT * FROM Humidite" + test_str + " WHERE Capteur = " + str(capteur) + last_str + ';'
 
     return getDB().runSelectQuery(query)
+"""
+def getHistorique24HHumFromDB(test = True, capteur = 0):
+    if test:
+        test_str = '_test'
+    else:
+        test_str = ''
+    
+    order_str = ' ORDER BY Humidite_id DESC'
+    time_filter = " WHERE Date_capteur >= NOW() - INTERVAL 24 HOUR"
 
+    if capteur < 1:
+        query = (
+            "SELECT * FROM Humidite" + test_str
+            + time_filter
+            + order_str + ';'
+        )
+    else:
+        query = (
+            "SELECT * FROM Humidite" + test_str
+            + time_filter
+            + " AND Capteur = " + str(capteur)
+            + order_str + ';'
+        )
+    return getDB().runSelectQuery(query)
+"""
 def getHistorique24HSystemesFromDB(test = True, systeme = ""):
     if test:
         test_str = '_test'
@@ -113,6 +162,33 @@ def getHistorique24HSystemesFromDB(test = True, systeme = ""):
     else:
         query = "SELECT * FROM Systemes" + test_str + " WHERE Systeme = '" + systeme +"'" + last_str + ';'
 
+    return getDB().runSelectQuery(query)
+"""
+
+
+def getHistorique24HSystemesFromDB(test = True, systeme = ""):
+    if test:
+        test_str = '_test'
+    else:
+        test_str = ''
+    order_str = ' ORDER BY Systeme_id DESC'
+    time_filter = " WHERE Date >= NOW() - INTERVAL 24 HOUR"
+    if not isSysteme(systeme):
+        systeme = ""
+
+    if systeme == "":
+        query = (
+            "SELECT * FROM Systemes" + test_str
+            + time_filter
+            + order_str + ';'
+        )
+    else:
+        query = (
+            "SELECT * FROM Systemes" + test_str
+            + time_filter
+            + " AND Systeme = '" +  systeme +"'" 
+            + order_str + ';'
+        )
     return getDB().runSelectQuery(query)
 
 def getHumiditeFromDB(test = True, capteur=0, last = False):
@@ -153,7 +229,7 @@ def getEtatSystemeFromDB(test = True, systeme = "", last = False):
     if not isSysteme(systeme):
         query = "SELECT * FROM Systemes" + test_str + last_str + ';'
     else:
-        query = "SELECT * FROM Systemes" + test_str + " WHERE Systeme = " + str(systeme) + last_str + ';'
+        query = "SELECT * FROM Systemes" + test_str + " WHERE Systeme = " + "'"+str(systeme)+"'" + last_str + ';'
 
     if last:
         return getDB().runSelectOneQuery(query)
@@ -610,16 +686,16 @@ def route_systeme_gen_etat_post(systeme_id, test = True):
     return reponse
 
 def route_systeme_gen_etat_get(systeme_id, test = True):
-    reponse_records = getEtatSystemeFromDB(test, systeme_id, False)
+    reponse_records = getEtatSystemeFromDB(test, systeme_id, True)
+    
     json_return = dict()
-    for row in reponse_records:
-        json_return[row[0]] = { 'Systeme ID': row[1],
-                               'Etat': row[2],
-                               'Date': row[3] }
-    return jsonify({'Liste des etats': json_return})
+
+    json_return = { 'Systeme ID': reponse_records[1],
+                    'Etat': reponse_records[2],
+                    'Date': reponse_records[3] }
+    return jsonify(json_return)
 
 # ------------- Routes des états des systèmes -------------
-
 @app.route('/fan1', methods=['POST'])
 def route_fan1_post():
     return route_systeme_gen_etat_post("fan1", False)

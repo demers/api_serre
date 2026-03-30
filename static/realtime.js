@@ -12,7 +12,8 @@ async function actualiserTableau() {
         return new Date(dateStr).toLocaleTimeString('fr-CA', {
             hour:   '2-digit',
             minute: '2-digit',
-            second: '2-digit'
+            second: '2-digit',
+            timeZone: 'UTC'
         });
     }
 
@@ -21,12 +22,12 @@ async function actualiserTableau() {
     document.getElementById('time-temp-haut').textContent   = formaterDate(capteurs["1"].Date);
 
     // Capteur 2 → Température Bas
-    document.getElementById('sensor-temp-bas').textContent  = capteurs["2"].Temperature + ' °C';
-    document.getElementById('time-temp-bas').textContent    = formaterDate(capteurs["2"].Date);
+    document.getElementById('sensor-temp-bas').textContent  = capteurs["3"].Temperature + ' °C';
+    document.getElementById('time-temp-bas').textContent    = formaterDate(capteurs["3"].Date);
 
     // Capteur 3 → Température Extérieur
-    document.getElementById('sensor-temp-ext').textContent  = capteurs["3"].Temperature + ' °C';
-    document.getElementById('time-temp-ext').textContent    = formaterDate(capteurs["3"].Date);
+    document.getElementById('sensor-temp-ext').textContent  = capteurs["2"].Temperature + ' °C';
+    document.getElementById('time-temp-ext').textContent    = formaterDate(capteurs["2"].Date);
 
     // Humidité → vient du capteur 1 (le seul qui a Humidite dans ton JSON)
     const humidite = capteurs["1"].Humidite;
